@@ -17,6 +17,10 @@ module.exports = {
   // darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        play: ["Sans", "sans-serif"],
+        plus: ["Sans", "sans-serif"],
+      },
       animation: {
         aurora: "aurora 60s linear infinite",
         scroll:
