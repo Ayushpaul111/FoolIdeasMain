@@ -24,11 +24,12 @@ const About = () => {
             agency in West Bengal and North Bengal.
           </h1>
         </div>
-        <div className="relative md:w-2/5 flex justify-center items-center">
+        {/* animate-[spin_3s_linear_infinite] */}
+        <div className="relative animate-[spin_12s_linear_infinite] md:w-2/5 flex justify-center items-center">
           {/* Circle Layout */}
           <div className="relative z-10 ">
             {/* Profile 1 (Top Center) */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
+            <div className="absolute top-[-33px] left-[80px] animate-[spin_reverse_12s_linear_infinite]">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
                 className="w-[80px] h-[80px] rounded-full"
@@ -37,7 +38,7 @@ const About = () => {
             </div>
 
             {/* Profile 2 (Top-Left) */}
-            <div className="absolute top-[20%] left-[5%]">
+            <div className="absolute top-[50px] left-[-23px] animate-[spin_reverse_12s_linear_infinite]">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
                 className="w-[80px] h-[80px] rounded-full"
@@ -46,7 +47,7 @@ const About = () => {
             </div>
 
             {/* Profile 3 (Top-Right) */}
-            <div className="absolute top-[20%] right-[5%]">
+            <div className="absolute top-[50px] right-[-25px] animate-[spin_reverse_12s_linear_infinite]">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
                 className="w-[80px] h-[80px] rounded-full"
@@ -55,7 +56,7 @@ const About = () => {
             </div>
 
             {/* Profile 4 (Bottom-Left) */}
-            <div className="absolute bottom-0 left-[15%]">
+            <div className="absolute bottom-[-10px] left-[15px] animate-[spin_reverse_12s_linear_infinite]">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
                 className="w-[80px] h-[80px] rounded-full"
@@ -64,7 +65,7 @@ const About = () => {
             </div>
 
             {/* Profile 5 (Bottom-Right) */}
-            <div className="absolute bottom-0 right-[15%]">
+            <div className="absolute bottom-0 right-[10px] animate-[spin_reverse_12s_linear_infinite]">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
                 className="w-[80px] h-[80px] rounded-full"
@@ -76,12 +77,13 @@ const About = () => {
             <Image src={circle} alt="Circle" className="w-full h-auto block" />
 
             {/* Center Mini Logo */}
-            <Image
+            
+          </div>
+          <Image
               src={miniLogo}
               alt="Mini Logo"
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              className="absolute animate-[spin_reverse_12s_linear_infinite]"
             />
-          </div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-52 bg-[#19A069] rounded-full blur-3xl opacity-30 z-0"></div>
         </div>
       </div>

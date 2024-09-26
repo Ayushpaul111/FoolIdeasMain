@@ -17,6 +17,9 @@ module.exports = {
   // darkMode: "class",
   theme: {
     extend: {
+      animation: {
+        spin_slow: "spin 3s linear infinite",
+      },
       fontFamily: {
         play: ["Sans", "sans-serif"],
         plus: ["Sans", "sans-serif"],
@@ -27,6 +30,10 @@ module.exports = {
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
+        spin_reverse:{
+          '0%, 100%': { transform: 'rotate(-360deg)' },
+          
+        },
         aurora: {
           from: {
             backgroundPosition: "50% 50%, 50% 50%",
@@ -47,15 +54,16 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        darkGreen: '#112F24', // Replace with your background color
+        darkGreen: "#112F24", // Replace with your background color
         green: {
-          600: '#34D399',
-          700: '#059669',
+          600: "#34D399",
+          700: "#059669",
         },
       },
     },
   },
-  plugins: [addVariablesForColors,
+  plugins: [
+    addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
@@ -81,14 +89,13 @@ module.exports = {
   ],
 };
 
-
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
