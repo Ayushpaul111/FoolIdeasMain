@@ -12,7 +12,7 @@ const Why = () => {
         </p>
         {/* Reasons */}
         <div className="flex justify-center mt-8 flex-wrap">
-          <div className="w-[340px] h-[100px] mx-3 my-3 border border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] ">
+          <div className="w-[340px] h-[100px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] ">
             <div className="m-3 flex">
               <div className="w-[60px] h-[40px] bg-[#007443A3] ">icon</div>
               <div className="text-start ml-5">
@@ -25,7 +25,7 @@ const Why = () => {
               </div>
             </div>
           </div>
-          <div className="w-[340px] h-[100px] mx-3 my-3 border border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] ">
+          <div className="w-[340px] h-[100px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] ">
             <div className="m-3 flex">
               <div className="w-[60px] h-[40px] bg-[#007443A3] ">icon</div>
               <div className="text-start ml-5">
@@ -38,7 +38,7 @@ const Why = () => {
               </div>
             </div>
           </div>
-          <div className="w-[340px] h-[100px] mx-3 my-3 border border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] ">
+          <div className="w-[340px] h-[100px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] ">
             <div className="m-3 flex">
               <div className="w-[60px] h-[40px] bg-[#007443A3] ">icon</div>
               <div className="text-start ml-5">

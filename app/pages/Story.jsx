@@ -3,7 +3,7 @@ import React from "react";
 const Story = () => {
   return (
     <div className="flex flex-wrap justify-center gap-16  text-[#B1C8BF] mb-28">
-      <div className="sm:max-w-[600px] sm:min-w-[500px] w-[300px] border border-[1px] border-[#007443A3] rounded-lg bg-[#001C10]">
+      <div className="sm:max-w-[600px] sm:min-w-[500px] w-[300px] border-[1px] border-[#007443A3] rounded-lg bg-[#001C10]">
         <p className="text-[25px] font-medium mx-5 mt-5 mb-2 bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
           Our Story
         </p>

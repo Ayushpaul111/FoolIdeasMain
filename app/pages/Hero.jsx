@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <section>
         <div className="w-full h-screen bg-[url('/bgGrid.svg')] bg-cover bg-center"> 
-            <div className="mx-auto bg-[url('/bgLogo.svg')] w-[85%] mx-auto bg-contain h-full bg-no-repeat bg-center flex items-center justify-center">
+            <div className=" bg-[url('/bgLogo.svg')] w-[85%] mx-auto bg-contain h-full bg-no-repeat bg-center flex items-center justify-center">
 
               
 
