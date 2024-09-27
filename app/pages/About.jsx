@@ -4,9 +4,9 @@ import circle from "@/components/vectors/circleWhite.svg";
 
 const About = () => {
   return (
-    <div className="h-auto md:h-[50rem] w-full flex justify-center items-center flex-col space-y-20 px-4 sm:px-8 lg:px-0 bg-[#00120B] ">
+    <div className="h-auto md:h-[50rem] w-full flex justify-center items-center flex-col space-y-20 px-4 sm:px-8 lg:px-0 mb-12">
       <div>
-        <h1 className="mt-16 text-3xl sm:text-4xl md:text-5xl font-play font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+        <h1 className=" text-3xl sm:text-4xl md:text-5xl font-play font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
           About Fool Ideas
         </h1>
         <p className="font-play mt-3 text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">

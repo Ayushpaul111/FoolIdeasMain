@@ -9,27 +9,14 @@ import insta from "@/public/logos/insta.svg";
 import whatsapp from "@/public/logos/whatsapp.svg";
 import linkedin from "@/public/logos/linkedin.svg";
 import telegram from "@/public/logos/telegram.svg";
-
+// import bg from '../../public/bgLogo.svg'
 const HeroSection = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center h-screen text-white bg-[#00120B] ">
-      <div className=" h-auto md:h-[50rem] w-full relative flex items-center justify-center px-4 sm:px-8 lg:px-0">
-        {/* Radial gradient for the container to give a faded look */}
-        {/* Background */}
-        {/* <div className="absolute px-8 sm:px-16 md:px-24 lg:px-48 py-16 sm:py-24 md:py-32 h-[80px] sm:h-[100px] md:h-[131px] w-[250px] sm:w-[350px] md:w-[450px] lg:w-[533px] bg-[#19A069] opacity-10 rounded-full top-[60px] sm:top-[80px] md:top-[104px] flex justify-center blur-3xl "></div> */}
+    <section>
+        <div className="w-full h-screen bg-[url('/bgGrid.svg')] bg-cover bg-center"> 
+            <div className="mx-auto bg-[url('/bgLogo.svg')] w-[85%] mx-auto bg-contain h-full bg-no-repeat bg-center flex items-center justify-center">
 
-        <div className="absolute inset-0 flex justify-center items-center z-0">
-          <Image
-            src={bgGrid}
-            alt="Background"
-            className="absolute top-0 opacity-100 z-0 mx-auto flex justify-center items-center"
-          />
-          <Image
-            src={bgLogo}
-            alt="Background"
-            className="absolute opacity-100 z-1 mx-auto flex justify-center items-center"
-          />
-        </div>
+              
 
         {/* Content */}
         <div className="relative z-10 text-center px-4">
@@ -59,6 +46,7 @@ const HeroSection = () => {
           </div>
         </div>
 
+      
         {/* Social Icons */}
         <div className="absolute flex flex-col right-4 md:right-8 top-1/2 transform -translate-y-1/2 space-y-4 z-10">
           <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
@@ -106,8 +94,9 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-[#00120B]  [mask-image:radial-gradient(ellipse_at_center,transparent_100%,black)]"></div>
+            </div>
+        </div>
+
     </section>
   );
 };

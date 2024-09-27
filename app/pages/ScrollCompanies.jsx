@@ -5,7 +5,7 @@ import { InfiniteMovingIcons } from "@/components/ui/infinite-moving-icons";
 
 const ScrollCompanies = () => {
   return (
-    <div className="h-[10rem] rounded-md flex flex-col antialiased bg-[#00120B] items-center justify-center relative overflow-hidden">
+    <div className="h-[10rem] rounded-md flex flex-col antialiased bg-[#00120B] items-center justify-center relative overflow-hidden mb-20">
       <InfiniteMovingIcons
         items={testimonials}
         direction="right"
