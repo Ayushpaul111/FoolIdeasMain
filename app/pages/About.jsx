@@ -1,21 +1,21 @@
 import Image from "next/image";
-import miniLogo from "@/components/vectors/miniLogo.svg";
-import circle from "@/components/vectors/circleWhite.svg";
+import miniLogo from "../../components/vectors/miniLogo.svg";
+import circle from "../../components/vectors/circleWhite.svg";
 
 const About = () => {
   return (
-    <div className="h-auto md:h-[50rem] w-full flex justify-center items-center flex-col space-y-20 px-4 sm:px-8 lg:px-0 mb-12">
-      <div>
-        <h1 className=" text-3xl sm:text-4xl md:text-5xl font-play font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+    <div className="h-auto  w-full flex justify-center items-center flex-col px-4 sm:px-8 lg:px-0 mb-12">
+      <div className="text-center ">
+        <h1 className=" text-3xl sm:text-4xl md:text-5xl  font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
           About Fool Ideas
         </h1>
-        <p className="font-play mt-3 text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
+        <p className="font-play mt-6 text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
           Guiding Your Success Every Step of the Way
         </p>
       </div>
-      <div className="flex md:flex-row flex-col space-y-10">
-        <div className="md:w-3/5 flex justify-center items-center px-6 sm:px-8 sm:pl-20  ">
-          <h1 className="font-play text-xl text-[#B1C8BF] leading-snug">
+      <div className="flex md:flex-row flex-col sm:mt-10 mt-6 sm:text-left text-center">
+        <div className="md:w-3/5 flex justify-center items-center  sm:pl-20  ">
+          <h1 className="font-play text-base sm:text-lg md:text-xl text-[#B1C8BF] leading-snug">
             Foolideas was founded with a simple yet powerful vision: to help
             businesses unleash their full potential through innovative marketing
             strategies. Our team of creative thinkers and marketing experts work
@@ -25,7 +25,7 @@ const About = () => {
           </h1>
         </div>
         {/* animate-[spin_3s_linear_infinite] */}
-        <div className="relative animate-[spin_12s_linear_infinite] md:w-2/5 flex justify-center items-center">
+        <div className="relative animate-[spin_12s_linear_infinite] md:w-2/5 flex justify-center items-center mt-10">
           {/* Circle Layout */}
           <div className="relative z-10 ">
             {/* Profile 1 (Top Center) */}
@@ -77,13 +77,12 @@ const About = () => {
             <Image src={circle} alt="Circle" className="w-full h-auto block" />
 
             {/* Center Mini Logo */}
-            
           </div>
           <Image
-              src={miniLogo}
-              alt="Mini Logo"
-              className="absolute animate-[spin_reverse_12s_linear_infinite]"
-            />
+            src={miniLogo}
+            alt="Mini Logo"
+            className="absolute animate-[spin_reverse_12s_linear_infinite]"
+          />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-52 bg-[#19A069] rounded-full blur-3xl opacity-30 z-0"></div>
         </div>
       </div>

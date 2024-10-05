@@ -4,10 +4,10 @@ const Services = () => {
   return (
     <section>
       <div className="text-center mx-3 mb-32">
-        <h1 className=" text-3xl sm:text-4xl md:text-5xl font-play font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+        <h1 className=" text-3xl sm:text-4xl md:text-5xl font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
           Our Services
         </h1>
-        <p className="font-play mt-3 text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
+        <p className="font-play mt-6 text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
           We Love challenging projects that require a comprehensive content
           strategy, thoughtful design, sophisticated development and ongoing
           marketing.
@@ -18,17 +18,17 @@ const Services = () => {
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
               <div className="text-start ">
-                <p className="text-[17px] font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
                   Social Media Management
                 </p>
-                <p className="text-[#B1C8BF] text-[14px] mt-2">
+                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
                   Boost your brand's presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
               <a
                 href=""
-                className="bg-[#001C10] rounded-full text-[14px] px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
+                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
               >
                 Learn More
               </a>
@@ -38,17 +38,17 @@ const Services = () => {
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
               <div className="text-start ">
-                <p className="text-[17px] font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
                   Social Media Management
                 </p>
-                <p className="text-[#B1C8BF] text-[14px] mt-2">
+                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
                   Boost your brand's presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
               <a
                 href=""
-                className="bg-[#001C10] rounded-full text-[14px] px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
+                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
               >
                 Learn More
               </a>
@@ -58,17 +58,17 @@ const Services = () => {
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
               <div className="text-start ">
-                <p className="text-[17px] font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
                   Social Media Management
                 </p>
-                <p className="text-[#B1C8BF] text-[14px] mt-2">
+                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
                   Boost your brand's presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
               <a
                 href=""
-                className="bg-[#001C10] rounded-full text-[14px] px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
+                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
               >
                 Learn More
               </a>
@@ -78,17 +78,17 @@ const Services = () => {
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
               <div className="text-start ">
-                <p className="text-[17px] font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
                   Social Media Management
                 </p>
-                <p className="text-[#B1C8BF] text-[14px] mt-2">
+                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
                   Boost your brand's presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
               <a
                 href=""
-                className="bg-[#001C10] rounded-full text-[14px] px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
+                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
               >
                 Learn More
               </a>
@@ -98,17 +98,17 @@ const Services = () => {
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
               <div className="text-start ">
-                <p className="text-[17px] font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
                   Social Media Management
                 </p>
-                <p className="text-[#B1C8BF] text-[14px] mt-2">
+                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
                   Boost your brand's presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
               <a
                 href=""
-                className="bg-[#001C10] rounded-full text-[14px] px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
+                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
               >
                 Learn More
               </a>
@@ -118,17 +118,17 @@ const Services = () => {
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
               <div className="text-start ">
-                <p className="text-[17px] font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
                   Social Media Management
                 </p>
-                <p className="text-[#B1C8BF] text-[14px] mt-2">
+                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
                   Boost your brand's presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
               <a
                 href=""
-                className="bg-[#001C10] rounded-full text-[14px] px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
+                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
               >
                 Learn More
               </a>
@@ -138,17 +138,17 @@ const Services = () => {
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
               <div className="text-start ">
-                <p className="text-[17px] font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
                   Social Media Management
                 </p>
-                <p className="text-[#B1C8BF] text-[14px] mt-2">
+                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
                   Boost your brand's presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
               <a
                 href=""
-                className="bg-[#001C10] rounded-full text-[14px] px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
+                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
               >
                 Learn More
               </a>
@@ -158,17 +158,17 @@ const Services = () => {
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
               <div className="text-start ">
-                <p className="text-[17px] font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
                   Social Media Management
                 </p>
-                <p className="text-[#B1C8BF] text-[14px] mt-2">
+                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
                   Boost your brand's presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
               <a
                 href=""
-                className="bg-[#001C10] rounded-full text-[14px] px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
+                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
               >
                 Learn More
               </a>
@@ -178,17 +178,17 @@ const Services = () => {
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
               <div className="text-start ">
-                <p className="text-[17px] font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
                   Social Media Management
                 </p>
-                <p className="text-[#B1C8BF] text-[14px] mt-2">
+                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
                   Boost your brand's presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
               <a
                 href=""
-                className="bg-[#001C10] rounded-full text-[14px] px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
+                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
               >
                 Learn More
               </a>

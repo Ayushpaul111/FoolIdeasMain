@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import mainLogo from "@/public/logos/logoMain.svg";
+import mainLogo from "../public/logos/logoMain.svg";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -66,7 +66,7 @@ const Navbar = () => {
               Reviews
             </Link>
           </div>
-          
+
           <a
             href="#"
             className="md:static absolute top-2 right-0 bg-green-600 text-white px-4 py-2 h-fit rounded-full hover:bg-green-700"
