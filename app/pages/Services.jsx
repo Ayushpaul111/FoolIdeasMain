@@ -22,7 +22,7 @@ const Services = () => {
                   Social Media Management
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand's presence with content scheduling,
+                  Boost your brand&apos;s presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
@@ -42,7 +42,7 @@ const Services = () => {
                   Social Media Management
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand's presence with content scheduling,
+                  Boost your brand&apos;s presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
@@ -62,7 +62,7 @@ const Services = () => {
                   Social Media Management
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand's presence with content scheduling,
+                  Boost your brand&apos;s presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
@@ -82,7 +82,7 @@ const Services = () => {
                   Social Media Management
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand's presence with content scheduling,
+                  Boost your brand&apos;s presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
@@ -102,7 +102,7 @@ const Services = () => {
                   Social Media Management
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand's presence with content scheduling,
+                  Boost your brand&apos;s presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
@@ -122,7 +122,7 @@ const Services = () => {
                   Social Media Management
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand's presence with content scheduling,
+                  Boost your brand&apos;s presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
@@ -142,7 +142,7 @@ const Services = () => {
                   Social Media Management
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand's presence with content scheduling,
+                  Boost your brand&apos;s presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
@@ -162,7 +162,7 @@ const Services = () => {
                   Social Media Management
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand's presence with content scheduling,
+                  Boost your brand&apos;s presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>
@@ -182,7 +182,7 @@ const Services = () => {
                   Social Media Management
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand's presence with content scheduling,
+                  Boost your brand&apos;s presence with content scheduling,
                   engagement, and performance analytics.
                 </p>
               </div>

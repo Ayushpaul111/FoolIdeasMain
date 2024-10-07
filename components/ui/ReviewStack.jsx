@@ -4,25 +4,22 @@ import React from "react";
 
 import { cn } from "../../lib/utils";
 
-
-export const ReviewStack = ({
-  numPeople,
-  className,
-  avatarUrls,
-}) => {
+export const ReviewStack = ({ numPeople, className, avatarUrls }) => {
   return (
     <div className={cn("z-10 flex -space-x-4 rtl:space-x-reverse", className)}>
       {avatarUrls.map((url, index) => (
-        
-        <div className="sm:w-16 sm:h-16 w-10 h-10 overflow-hidden rounded-full">
-        <img
-          key={index}
+        <div
+          key={url}
+          className="sm:w-16 sm:h-16 w-10 h-10 overflow-hidden rounded-full"
+        >
+          {/* <img
+          
           className="sm:w-16 w-10 rounded-full border-2 border-white dark:border-gray-800"
           src={url}
           width={40}
           height={40}
           alt={`Avatar ${index + 1}`}
-        />
+        /> */}
         </div>
       ))}
       {/* <a
@@ -34,5 +31,3 @@ export const ReviewStack = ({
     </div>
   );
 };
-
-

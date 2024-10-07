@@ -30,45 +30,60 @@ const About = () => {
           <div className="relative z-10 ">
             {/* Profile 1 (Top Center) */}
             <div className="absolute top-[-33px] left-[80px] animate-[spin_reverse_12s_linear_infinite]">
-              <img
+              <Image
                 src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
-                className="w-[80px] h-[80px] rounded-full"
+                width={80}
+                height={80}
+                className="rounded-full "
+                objectFit="cover"
                 alt="Profile 1"
               />
             </div>
 
             {/* Profile 2 (Top-Left) */}
             <div className="absolute top-[50px] left-[-23px] animate-[spin_reverse_12s_linear_infinite]">
-              <img
+              <Image
                 src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
-                className="w-[80px] h-[80px] rounded-full"
+                width={80}
+                height={80}
+                className="rounded-full "
+                objectFit="cover"
                 alt="Profile 2"
               />
             </div>
 
             {/* Profile 3 (Top-Right) */}
             <div className="absolute top-[50px] right-[-25px] animate-[spin_reverse_12s_linear_infinite]">
-              <img
+              <Image
                 src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
-                className="w-[80px] h-[80px] rounded-full"
+                width={80}
+                height={80}
+                className="rounded-full "
+                objectFit="cover"
                 alt="Profile 3"
               />
             </div>
 
             {/* Profile 4 (Bottom-Left) */}
             <div className="absolute bottom-[-10px] left-[15px] animate-[spin_reverse_12s_linear_infinite]">
-              <img
+              <Image
                 src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
-                className="w-[80px] h-[80px] rounded-full"
+                width={80}
+                height={80}
+                className="rounded-full "
+                objectFit="cover"
                 alt="Profile 4"
               />
             </div>
 
             {/* Profile 5 (Bottom-Right) */}
             <div className="absolute bottom-0 right-[10px] animate-[spin_reverse_12s_linear_infinite]">
-              <img
+              <Image
                 src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
-                className="w-[80px] h-[80px] rounded-full"
+                width={80}
+                height={80}
+                className="rounded-full "
+                objectFit="cover"
                 alt="Profile 5"
               />
             </div>

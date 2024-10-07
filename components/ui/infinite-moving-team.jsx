@@ -15,7 +15,7 @@ export const InfiniteMovingTeam = ({
 
   useEffect(() => {
     addAnimation();
-  }, []);
+  },[]);
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
@@ -68,8 +68,8 @@ export const InfiniteMovingTeam = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}>
         {items.map((item, idx) => (
-          <div className="relative sm:w-[300px]  sm:h-[360px] w-[250px] h-[300px] rounded-2xl overflow-hidden">
-            <img src={item.image} alt={item.name} className="sm:w-[300px]  w-[250px] " />
+          <div key={idx} className="relative sm:w-[300px]  sm:h-[360px] w-[250px] h-[300px] rounded-2xl overflow-hidden">
+            {/* <img src={item.image} alt={item.name} className="sm:w-[300px]  w-[250px] " /> */}
             <div className=" absolute bottom-0 min-w-[220px] mx-3  mb-5  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] ">
               <div className="m-3 mt-4">
                 <p className="text-base sm:text-lg md:text-xl font-bold">

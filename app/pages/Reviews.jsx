@@ -14,11 +14,11 @@ const Reviews = () => {
       </h1>
       <ReviewStack  avatarUrls={reviewers} numPeople={99} className='mt-14'/>
       <div className='flex mt-3 gap-1 items-center '>
+      {/* <img src="/star.svg" alt="star" className='sm:w-6 w-4'/>
       <img src="/star.svg" alt="star" className='sm:w-6 w-4'/>
       <img src="/star.svg" alt="star" className='sm:w-6 w-4'/>
       <img src="/star.svg" alt="star" className='sm:w-6 w-4'/>
-      <img src="/star.svg" alt="star" className='sm:w-6 w-4'/>
-      <img src="/star.svg" alt="star" className='sm:w-6 w-4'/>
+      <img src="/star.svg" alt="star" className='sm:w-6 w-4'/> */}
       <p className='sm:text-sm md:text-lg text-xs pl-2 text-[#B1C8BF]'> 325 reviews</p>
       </div>
       
