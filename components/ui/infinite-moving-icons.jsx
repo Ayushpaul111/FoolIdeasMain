@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -16,7 +16,7 @@ export const InfiniteMovingIcons = ({
 
   useEffect(() => {
     addAnimation();
-  }, []);
+  },[]);
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
@@ -86,11 +86,11 @@ export const InfiniteMovingIcons = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <img
+              {/* <img
                 src={item.image}
                 alt={item.name}
                 className="w-full h-auto object-contain grayscale"
-              />
+              /> */}
             </blockquote>
           </li>
         ))}
