@@ -1,5 +1,5 @@
 import React from "react";
-
+import CountUp from "react-countup";
 const Story = () => {
   return (
     <div className="flex flex-wrap justify-center gap-16  text-[#B1C8BF] mb-28 sm:mx-10 mx-5 mt-36">
@@ -22,7 +22,7 @@ const Story = () => {
         <div className="  flex items-center">
           <div>
             <p className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
-              200+
+             <CountUp end={200}/>
             </p>
             <p>Completed Projects</p>
           </div>
@@ -30,7 +30,7 @@ const Story = () => {
         <div className=" flex items-center  ">
           <div>
             <p className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
-              8+
+              <CountUp end={8}/>
             </p>
             <p>Service Provided</p>
           </div>
@@ -38,7 +38,7 @@ const Story = () => {
         <div className="  flex items-center  ">
           <div>
             <p className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
-              95+
+            <CountUp end={8}/>
             </p>
             <p>Client Reviews</p>
           </div>

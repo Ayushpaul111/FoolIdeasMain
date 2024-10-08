@@ -3,8 +3,8 @@ import React from 'react'
 import {ReviewStack} from '../../components/ui/ReviewStack'
 import {InfiniteMovingReviews} from '../../components/ui/infinite-moving-reviews'
 const Reviews = () => {
-    const reviewers=['/biru.png','/biru.png','/biru.png','/biru.png','/biru.png','/biru.png','/biru.png','/biru.png'];
-    const reviews=[{name:"xkjbkj",review:'dinm jbe geiwgiw ewigeiegi',platform:"fiver",location:"usa",image:'/biru.png',stars:4},{name:"Suman Das",review:'Amzing Work done by Bireswar Das',platform:"linkedin",location:"Cooch Behar",image:'/biru.png',stars:5},{name:"xkjebk",review:'dilken owie iwoiwi woop oiwin',platform:"fiver",location:"usa",image:'/biru.png',stars:4},{name:"Suman Das",review:'Amzing Work done by Bireswar Das',platform:"linkedin",location:"Cooch Behar",image:'/biru.png',stars:5}]
+    const reviewers=['/team_images/biru.png','/team_images/biru.png','/team_images/biru.png','/team_images/biru.png','/team_images/biru.png','/team_images/biru.png','/team_images/biru.png','/team_images/biru.png'];
+    const reviews=[{name:"xkjbkj",review:'dinm jbe geiwgiw ewigeiegi',platform:"fiver",location:"usa",image:'/team_images/biru.png',stars:4},{name:"Suman Das",review:'Amzing Work done by Bireswar Das',platform:"linkedin",location:"Cooch Behar",image:'/team_images/biru.png',stars:5},{name:"xkjebk",review:'dilken owie iwoiwi woop oiwin',platform:"fiver",location:"usa",image:'/team_images/biru.png',stars:4},{name:"Suman Das",review:'Amzing Work done by Bireswar Das',platform:"linkedin",location:"Cooch Behar",image:'/team_images/biru.png',stars:5}]
   return (
     <section className='mx-5 my-10 '>
     <div className='flex flex-wrap flex'>

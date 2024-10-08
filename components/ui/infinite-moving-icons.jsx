@@ -64,7 +64,7 @@ export const InfiniteMovingIcons = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-7xl overflow-hidden flex justify-center items-center [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20  overflow-hidden flex justify-center items-center [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -86,9 +86,11 @@ export const InfiniteMovingIcons = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              {/* <img
+              {/* <Image
                 src={item.image}
                 alt={item.name}
+                width={5}
+                height={5}
                 className="w-full h-auto object-contain grayscale"
               /> */}
             </blockquote>

@@ -2,7 +2,7 @@
 
 import { cn } from "../../lib/utils";
 import React, { useEffect, useState } from "react";
-
+import Image from "next/image";
 export const InfiniteMovingReviews = ({
   items,
   direction = "left",
@@ -70,7 +70,7 @@ export const InfiniteMovingReviews = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20   overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -94,7 +94,7 @@ export const InfiniteMovingReviews = ({
               <div className="flex mt-3 gap-1 items-center ">{getstars(item.stars)}</div>
               <div className="flex mt-3 items-center">
                 <div className="w-[50px] h-[50px] rounded-full overflow-hidden">
-                {/* <img src={item.image} alt="Profile" width="50px"  /> */}
+                <Image src={item.image} alt="Profile" width={50} height={50}/>
                 </div>
                 <div className="ml-3 "><p className="text-xs sm:text-sm  text-[#B1C8BF]">{item.name}</p>
                 <p className="text-xs sm:text-sm  text-[#B1C8BF]">{item.location}</p></div>

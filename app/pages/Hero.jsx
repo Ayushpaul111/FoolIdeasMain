@@ -43,44 +43,52 @@ const HeroSection = () => {
             <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
-                  {/* <img
+                  <Image
                     src='/logos/whatsapp.svg'
                     alt="WhatsApp"
+                    width={5}
+                    height={5}
                     className="w-5 h-5 sm:w-6 sm:h-6"
-                  /> */}
+                  />
                 </Link>
               </div>
             </div>
             <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
-                  {/* <img
+                  <Image
                     src='/logos/telegram.svg'
                     alt="Telegram"
+                    width={5}
+                    height={5}
                     className="w-5 h-5 sm:w-6 sm:h-6"
-                  /> */}
+                  />
                 </Link>
               </div>
             </div>
             <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
-                  {/* <img
+                  <Image
                     src='/logos/linkedin.svg'
                     alt="LinkedIn"
+                    width={5}
+                    height={5}
                     className="w-5 h-5 sm:w-6 sm:h-6"
-                  /> */}
+                  />
                 </Link>
               </div>
             </div>
             <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
-                  {/* <img
+                  <Image
                     src='/logos/insta.svg'
                     alt="Instagram"
+                    width={5}
+                    height={5}
                     className="w-5 h-5 sm:w-6 sm:h-6"
-                  /> */}
+                  />
                 </Link>
               </div>
             </div>

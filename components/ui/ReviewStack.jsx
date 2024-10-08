@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-
+import Image from "next/image";
 import { cn } from "../../lib/utils";
 
 export const ReviewStack = ({ numPeople, className, avatarUrls }) => {
@@ -12,14 +12,14 @@ export const ReviewStack = ({ numPeople, className, avatarUrls }) => {
           key={url}
           className="sm:w-16 sm:h-16 w-10 h-10 overflow-hidden rounded-full"
         >
-          {/* <img
+          <Image
           
           className="sm:w-16 w-10 rounded-full border-2 border-white dark:border-gray-800"
           src={url}
           width={40}
           height={40}
           alt={`Avatar ${index + 1}`}
-        /> */}
+        />
         </div>
       ))}
       {/* <a
