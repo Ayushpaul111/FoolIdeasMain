@@ -24,6 +24,12 @@ const Team = () => {
       image: "/team_images/MrinmoySarkar.jpg",
       role: "Video Editor",
     },
+    {
+      name: "Debarati Bhattacharya",
+      image: "/team_images/DebaratiBhattacharya.jpg",
+      role: "Content Writer",
+    },
+    
   ];
   return (
     <div className=" my-32">

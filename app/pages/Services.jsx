@@ -55,7 +55,7 @@ const Services = () => {
       service: "Google Ads",
       description:
         "Reach your target audience effectively with optimized Google Ads campaigns.",
-    },
+    }
   ];
   return (
     <section>
