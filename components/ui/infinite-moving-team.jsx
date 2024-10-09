@@ -78,7 +78,7 @@ export const InfiniteMovingTeam = ({
             className="relative text-[#B1C8BF] sm:w-[300px]  sm:h-[360px] w-[250px] h-[300px] rounded-2xl overflow-hidden bg-cover"
             style={{ backgroundImage: `url(${item.image})` }}
           >
-            <div className=" absolute bottom-0 w-[275px]  mx-3  mb-5  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] ">
+            <div className=" absolute bottom-0 sm:w-[275px] w-[225px]  mx-3  mb-5  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] ">
               <div className="m-3 mt-4">
                 <p className="text-base sm:text-lg md:text-xl font-bold">
                   {item.name}
