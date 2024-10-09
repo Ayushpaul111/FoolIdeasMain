@@ -1,10 +1,8 @@
 import React from "react";
 import Image from "next/image";
-const Service = ({items}) => {
+const Service = ({ items }) => {
   return (
     <div className="flex justify-center mt-8 flex-wrap">
-      {/* Social */}
-      
       {items.map((item, index) => {
         return (
           <div className="relative w-[400px] h-[450px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-90% bg-opacity-30">
