@@ -1,6 +1,62 @@
 import React from "react";
-
+import Service from "../../components/ui/Service";
 const Services = () => {
+  const items = [
+    {
+      image: "/services/social.svg",
+      service: "Social Media Management",
+      description:
+        " Boost your brand&apos;s presence with content scheduling,engagement, and performance analytics.",
+    },
+    {
+      image: "/services/content.svg",
+      service: "Content Creation",
+      description:
+        "Engage your audience with high-quality, original content tailored to your brand.",
+    },
+    {
+      image: "/services/web.svg",
+      service: "Web Development",
+      description:
+        " Get a sleek, responsive website optimized for performance and conversion.",
+    },
+    {
+      image: "/services/performance.svg",
+      service: "Performance Marketing & Paid Media",
+      description:
+        "Drive traffic and boost conversions with data-driven paid media strategies.",
+    },
+    {
+      image: "/services/search.svg",
+      service: "Search Engine Optimization (SEO)",
+      description:
+        "Improve your search rankings and attract organic traffic with effective SEO techniques.",
+    },
+    {
+      image: "/services/branding.svg",
+      service: "Branding and Designing",
+      description:
+        " Create a memorable brand image with our comprehensive branding and design services.",
+    },
+    {
+      image: "/services/ecomm.svg",
+      service: "E-Commerce Marketing",
+      description:
+        "Increase your online sales with tailored e-commerce marketing strategies.",
+    },
+    {
+      image: "/services/influencer.svg",
+      service: "Influencer Marketing",
+      description:
+        "Amplify your brand's reach with authentic influencer campaigns.",
+    },
+    {
+      image: "/services/ads.svg",
+      service: "Google Ads",
+      description:
+        "Reach your target audience effectively with optimized Google Ads campaigns.",
+    }
+  ];
   return (
     <section>
       <div className="text-center mx-3 mb-32">
@@ -12,189 +68,9 @@ const Services = () => {
           strategy, thoughtful design, sophisticated development and ongoing
           marketing.
         </p>
-        {/* Cards */}
-        <div className="flex justify-center mt-8 flex-wrap">
-          <div className="w-[340px] h-[400px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-9  0%">
-            <div className="m-5 relative h-[90%] ">
-              <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
-              <div className="text-start ">
-                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                  Social Media Management
-                </p>
-                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand&apos;s presence with content scheduling,
-                  engagement, and performance analytics.
-                </p>
-              </div>
-              <a
-                href=""
-                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="w-[340px] h-[400px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-9  0%">
-            <div className="m-5 relative h-[90%] ">
-              <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
-              <div className="text-start ">
-                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                  Social Media Management
-                </p>
-                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand&apos;s presence with content scheduling,
-                  engagement, and performance analytics.
-                </p>
-              </div>
-              <a
-                href=""
-                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="w-[340px] h-[400px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-9  0%">
-            <div className="m-5 relative h-[90%] ">
-              <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
-              <div className="text-start ">
-                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                  Social Media Management
-                </p>
-                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand&apos;s presence with content scheduling,
-                  engagement, and performance analytics.
-                </p>
-              </div>
-              <a
-                href=""
-                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="w-[340px] h-[400px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-9  0%">
-            <div className="m-5 relative h-[90%] ">
-              <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
-              <div className="text-start ">
-                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                  Social Media Management
-                </p>
-                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand&apos;s presence with content scheduling,
-                  engagement, and performance analytics.
-                </p>
-              </div>
-              <a
-                href=""
-                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="w-[340px] h-[400px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-9  0%">
-            <div className="m-5 relative h-[90%] ">
-              <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
-              <div className="text-start ">
-                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                  Social Media Management
-                </p>
-                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand&apos;s presence with content scheduling,
-                  engagement, and performance analytics.
-                </p>
-              </div>
-              <a
-                href=""
-                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="w-[340px] h-[400px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-9  0%">
-            <div className="m-5 relative h-[90%] ">
-              <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
-              <div className="text-start ">
-                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                  Social Media Management
-                </p>
-                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand&apos;s presence with content scheduling,
-                  engagement, and performance analytics.
-                </p>
-              </div>
-              <a
-                href=""
-                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="w-[340px] h-[400px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-9  0%">
-            <div className="m-5 relative h-[90%] ">
-              <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
-              <div className="text-start ">
-                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                  Social Media Management
-                </p>
-                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand&apos;s presence with content scheduling,
-                  engagement, and performance analytics.
-                </p>
-              </div>
-              <a
-                href=""
-                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="w-[340px] h-[400px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-9  0%">
-            <div className="m-5 relative h-[90%] ">
-              <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
-              <div className="text-start ">
-                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                  Social Media Management
-                </p>
-                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand&apos;s presence with content scheduling,
-                  engagement, and performance analytics.
-                </p>
-              </div>
-              <a
-                href=""
-                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-          <div className="w-[340px] h-[400px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-9  0%">
-            <div className="m-5 relative h-[90%] ">
-              <div className="w-[100px] h-[100px] bg-[#007443A3]">icon</div>
-              <div className="text-start ">
-                <p className="text-base sm:text-lg md:text-xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                  Social Media Management
-                </p>
-                <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                  Boost your brand&apos;s presence with content scheduling,
-                  engagement, and performance analytics.
-                </p>
-              </div>
-              <a
-                href=""
-                className="bg-[#001C10] rounded-full text-base sm:text-lg md:text-xl px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
+        {/* Services */}
+
+        <Service items={items} />
       </div>
     </section>
   );

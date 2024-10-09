@@ -1,6 +1,6 @@
-import { section } from "framer-motion/client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 const Contact = () => {
   return (
     <section className="mt-20 mx-5">
@@ -15,7 +15,7 @@ const Contact = () => {
       </div>
 
       <div className="flex  flex-wrap">
-        <div className="sm:m-10 mt-10 sm:w-[50%] w-full text-[#B1C8BF]  text-base sm:text-lg md:text-xl ">
+        <div className="sm:m-10 mt-10 lg:w-[50%] w-full text-[#B1C8BF]  text-base sm:text-lg md:text-xl ">
           <form action="">
             <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
               <div>
@@ -27,7 +27,6 @@ const Contact = () => {
                   name="firstname"
                   id="firstname"
                   placeholder="First Name"
-                  //   value="value"
                   className="mt-2 w-full sm:p-3 p-2 bg-[#001C10] placeholder:text-[#b1c8bf92] rounded-lg border-[1px] border-[#007443A3]"
                 />
               </div>
@@ -103,44 +102,52 @@ const Contact = () => {
             <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
-                  {/* <img
+                  <Image
                     src="/logos/whatsapp.svg"
                     alt="WhatsApp"
+                    width={5}
+                    height={5}
                     className="w-5 h-5 sm:w-6 sm:h-6"
-                  /> */}
+                  />
                 </Link>
               </div>
             </div>
             <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
-                  {/* <img
+                  <img
                     src="/logos/telegram.svg"
                     alt="Telegram"
+                    width={5}
+                    height={5}
                     className="w-5 h-5 sm:w-6 sm:h-6"
-                  /> */}
+                  />
                 </Link>
               </div>
             </div>
             <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
-                  {/* <img
+                  <img
                     src="/logos/linkedin.svg"
                     alt="LinkedIn"
+                    width={5}
+                    height={5}
                     className="w-5 h-5 sm:w-6 sm:h-6"
-                  /> */}
+                  />
                 </Link>
               </div>
             </div>
             <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
-                  {/* <img
+                  <img
                     src="/logos/insta.svg"
                     alt="Instagram"
+                    width={5}
+                    height={5}
                     className="w-5 h-5 sm:w-6 sm:h-6"
-                  /> */}
+                  />
                 </Link>
               </div>
             </div>
@@ -156,11 +163,13 @@ const Contact = () => {
             <div className="rounded-xl w-fit mt-2 text-[#38be87] p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="w-fit bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
-                  {/* <img
+                  <img
                     src="/logos/phone.svg"
                     alt="Instagram"
+                    width={5}
+                    height={5}
                     className="w-5 h-5 sm:w-6 sm:h-6"
-                  /> */}
+                  />
                 </Link>
               </div>
             </div>
@@ -179,11 +188,13 @@ const Contact = () => {
             <div className="rounded-xl w-fit mt-2 text-[#38be87] p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="w-fit bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
-                  {/* <img
+                  <img
                     src="/logos/location.svg"
                     alt="Instagram"
+                    width={5}
+                    height={5}
                     className="w-5 h-5 sm:w-6 sm:h-6"
-                  /> */}
+                  />
                 </Link>
               </div>
             </div>
