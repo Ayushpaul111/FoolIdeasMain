@@ -6,9 +6,9 @@ import { InfiniteMovingIcons } from "../../components/ui/infinite-moving-icons";
 const Team = () => {
   const items = [
     {
-      name: "Bireswar Das",
-      image: "/team_images/biru.png",
-      role: "Marketing Lead Fool Ideas",
+      name: "Chandrika Shil",
+      image: "/team_images/ChandrikaShil.jpg",
+      role: "Voice Dubbing Artist",
     },
     {
       name: "Md Imon Hossen",

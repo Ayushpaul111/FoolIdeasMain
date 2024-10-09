@@ -6,9 +6,9 @@ const Footer = () => {
     <section className="sm:m-10 sm:mt-[150px]  m-5 mt-36 text-sm sm:text-lg md:text-xl">
       <div className="grid sm:grid-cols-2 grid-cols-1 ">
         <div className="sm:m-5 grid grid-cols-3 sm:gap-y-5 gap-y-3">
-          <p className="">Company</p>
-          <p className="">Company</p>
-          <p className="">Company</p>
+          <p className="text-white">Company</p>
+          <p className="text-white">Company</p>
+          <p className="text-white">Company</p>
           <p className="text-[#B1C8BF]">About Us</p>
           <p className=" text-[#B1C8BF]">About Us</p>
           <p className=" text-[#B1C8BF]">About Us</p>
