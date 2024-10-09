@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const Why = () => {
   return (
     <section>
@@ -14,7 +14,7 @@ const Why = () => {
         <div className="flex justify-center mt-8 flex-wrap">
           <div className="w-[340px] h-[100px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] ">
             <div className="m-3 flex">
-              <div className="w-[60px] h-[40px] bg-[#007443A3] ">icon</div>
+              <div className="w-[60px] h-[40px]  "><Image src="/why_images/expertise.svg"  width={60} height={40}/></div>
               <div className="text-start ml-5">
                 <p className="text-[17px] font-bold bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
                   Expertise
@@ -27,7 +27,7 @@ const Why = () => {
           </div>
           <div className="w-[340px] h-[100px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] ">
             <div className="m-3 flex">
-              <div className="w-[60px] h-[40px] bg-[#007443A3] ">icon</div>
+              <div className="w-[60px] h-[40px]  "> <Image src="/why_images/customized.svg"  width={60} height={40}/></div>
               <div className="text-start ml-5">
                 <p className="text-[17px] font-bold bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
                   Customized Solutions
@@ -40,7 +40,7 @@ const Why = () => {
           </div>
           <div className="w-[340px] h-[100px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] ">
             <div className="m-3 flex">
-              <div className="w-[60px] h-[40px] bg-[#007443A3] ">icon</div>
+              <div className="w-[60px] h-[40px] "><Image src="/why_images/results.svg" width={60} height={40}/></div>
               <div className="text-start ml-5">
                 <p className="text-[17px] font-bold bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
                   Results-Driven

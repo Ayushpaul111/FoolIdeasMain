@@ -16,7 +16,7 @@ const Contact = () => {
       </div>
 
       <div className="flex  flex-wrap">
-        <div className="sm:m-10 mt-10 sm:w-[50%] w-full text-[#B1C8BF]  text-base sm:text-lg md:text-xl ">
+        <div className="sm:m-10 mt-10 lg:w-[50%] w-full text-[#B1C8BF]  text-base sm:text-lg md:text-xl ">
           <form action="">
             <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
               <div>

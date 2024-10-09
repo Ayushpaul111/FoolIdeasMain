@@ -86,13 +86,13 @@ export const InfiniteMovingIcons = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              {/* <Image
+              <Image
                 src={item.image}
                 alt={item.name}
-                width={5}
-                height={5}
-                className="w-full h-auto object-contain grayscale"
-              /> */}
+                width={200}
+                height={200}
+                className="object-contain grayscale"
+              />
             </blockquote>
           </li>
         ))}

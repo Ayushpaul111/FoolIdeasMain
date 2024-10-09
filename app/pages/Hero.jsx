@@ -11,13 +11,13 @@ const HeroSection = () => {
       <div className="w-full h-screen bg-[url('/bgGrid.svg')] bg-cover bg-center">
         <div className=" bg-[url('/bgLogo.svg')] w-[85%] mx-auto bg-contain h-full bg-no-repeat bg-center flex items-center justify-center">
           {/* Content */}
-          <div className="relative z-10 text-center px-4">
+          <div className="relative z-10 text-center px-5">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-play  font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-55% to-[#4C685D] to-100% py-8">
               Empowering Your Brand,
               <br />
               Elevating Your Business
             </h1>
-            <p className="mt-4 font-play text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
+            <p className="mt-4 font-play text-base sm:text-lg md:text-xl max-w-3xl mx-auto px-3 text-[#B1C8BF]">
               Your strategic partner in crafting compelling campaigns and
               driving measurable results. Let’s turn your vision into success.
             </p>

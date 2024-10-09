@@ -16,7 +16,7 @@ export default function Home() {
   return (
 
     // bg-[#00120B]
-    <main className="bg-[#00120B] pb-10 w-full overflow-hidden">
+    <main className="bg-[#00120B]  w-full overflow-hidden">
       <HeroSection/>
       <ScrollCompanies/>
       <About/>

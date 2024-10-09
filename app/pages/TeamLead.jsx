@@ -4,7 +4,7 @@ import Link from "next/link";
 const TeamLead = () => {
   return (
     
-      <div className="text-center sm:m-10 m-5 mb-32">
+      <div className="text-center sm:m-10 m-5 ">
         <h1 className=" text-3xl sm:text-4xl md:text-5xl  font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
           Our Team Lead
         </h1>
@@ -13,8 +13,8 @@ const TeamLead = () => {
         </p>
         {/* Leader Card */}
 
-        <div className=" mt-8  border-[1px] flex sm:flex-row flex-col-reverse sm:flex-row   border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-9  0%">
-          <div className=" sm:m-16 sm:mb-10  m-5  sm:w-[55%]   flex-shrink-0 h-fit overflow-hidden ">
+        <div className=" mt-8  border-[1px] flex lg:flex-row flex-col  min-h-[500px]  border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-9  0%">
+          <div className=" sm:m-16 m-5  lg:w-[55%]   flex-shrink-0 h-fit overflow-hidden ">
             
             <div className="text-start   ">
                 <p className="text-3xl sm:text-4xl md:text-5xl mb font-semibold  bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">Bireswar das</p>
@@ -48,8 +48,8 @@ const TeamLead = () => {
            
           </div> 
           <div className="w-full  relative overflow-hidden"> 
-                <div className="w-[100%] sm:absolute relative">
-                  <Image src="/team_images/Bireswar.png" alt="Bireswar Das"  width={400} height={200} className="m-auto sm:w-[400px] w-[200px] "/>
+                <div className="w-[100%] lg:absolute relative lg:bottom-[-100px]">
+                  <Image src="/team_images/Bireswar.png" alt="Bireswar Das"  width={400} height={200} className="m-auto sm:w-[400px] w-[250px] "/>
                 </div>
                 
                 
