@@ -16,13 +16,21 @@ export const InfiniteMovingReviews = ({
   function getstars(n) {
     let stars = [];
     for (let i = 0; i < n; i++) {
-      // stars.push(<img src="/star.svg" alt="star" className="w-3 sm:w-4" />);
+      stars.push(
+        <Image
+          src="/star.svg"
+          alt="star"
+          width={3}
+          height={3}
+          className="w-3 sm:w-4"
+        />
+      );
     }
     return stars;
   }
   useEffect(() => {
     addAnimation();
-  },[]);
+  }, []);
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
@@ -83,7 +91,10 @@ export const InfiniteMovingReviews = ({
         )}
       >
         {items.map((item, idx) => (
-          <div key={idx} className="sm:w-[300px] w-[250px]  mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] ">
+          <div
+            key={idx}
+            className="sm:w-[300px] w-[250px]  mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] "
+          >
             <div className="text-start  m-3">
               <p className=" font-bold md:text-lg sm:text-base text-sm bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
                 {item.platform}
@@ -91,13 +102,26 @@ export const InfiniteMovingReviews = ({
               <p className="text-[#B1C8BF] md:text-base sm:text-sm text-xs mt-4">
                 {item.review}
               </p>
-              <div className="flex mt-3 gap-1 items-center ">{getstars(item.stars)}</div>
+              <div className="flex mt-3 gap-1 items-center ">
+                {getstars(item.stars)}
+              </div>
               <div className="flex mt-3 items-center">
                 <div className="w-[50px] h-[50px] rounded-full overflow-hidden">
-                <Image src={item.image} alt="Profile" width={50} height={50}/>
+                  <Image
+                    src={item.image}
+                    alt="Profile"
+                    width={50}
+                    height={50}
+                  />
                 </div>
-                <div className="ml-3 "><p className="text-xs sm:text-sm  text-[#B1C8BF]">{item.name}</p>
-                <p className="text-xs sm:text-sm  text-[#B1C8BF]">{item.location}</p></div>
+                <div className="ml-3 ">
+                  <p className="text-xs sm:text-sm  text-[#B1C8BF]">
+                    {item.name}
+                  </p>
+                  <p className="text-xs sm:text-sm  text-[#B1C8BF]">
+                    {item.location}
+                  </p>
+                </div>
               </div>
             </div>
           </div>

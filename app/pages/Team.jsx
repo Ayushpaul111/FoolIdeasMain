@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { InfiniteMovingTeam } from "../../components/ui/infinite-moving-team";
-import { InfiniteMovingIcons } from "../../components/ui/infinite-moving-icons";
 
 const Team = () => {
   const items = [

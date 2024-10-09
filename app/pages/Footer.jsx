@@ -31,10 +31,42 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-row sm:justify-end gap-3 mb-10 ">
-            <Link href='/'><Image src='/logos/linkedinfooter.svg' width={30} height={30} alt="Insta"  className="sm:w-[30px] sm:h-[30px] w-[25px] h-[25px]"/></Link>
-            <Link href='/'><Image src='/logos/instafooter.svg' width={30} height={30} alt="Insta"   className="sm:w-[30px] sm:h-[30px] w-[25px] h-[25px]"/></Link>
-            <Link href='/'><Image src='/logos/facebookfooter.svg' width={30} height={30} alt="Insta"   className="sm:w-[30px] sm:h-[30px] w-[25px] h-[25px]"/></Link>
-            <Link href='/'><Image src='/logos/youtubefooter.svg' width={30} height={30} alt="Insta"  className="sm:w-[30px] sm:h-[30px] w-[25px] h-[25px]"/></Link>
+              <Link href="/">
+                <Image
+                  src="/logos/linkedinfooter.svg"
+                  width={30}
+                  height={30}
+                  alt="Insta"
+                  className="sm:w-[30px] sm:h-[30px] w-[25px] h-[25px]"
+                />
+              </Link>
+              <Link href="/">
+                <Image
+                  src="/logos/instafooter.svg"
+                  width={30}
+                  height={30}
+                  alt="Insta"
+                  className="sm:w-[30px] sm:h-[30px] w-[25px] h-[25px]"
+                />
+              </Link>
+              <Link href="/">
+                <Image
+                  src="/logos/facebookfooter.svg"
+                  width={30}
+                  height={30}
+                  alt="Insta"
+                  className="sm:w-[30px] sm:h-[30px] w-[25px] h-[25px]"
+                />
+              </Link>
+              <Link href="/">
+                <Image
+                  src="/logos/youtubefooter.svg"
+                  width={30}
+                  height={30}
+                  alt="Insta"
+                  className="sm:w-[30px] sm:h-[30px] w-[25px] h-[25px]"
+                />
+              </Link>
             </div>
           </div>
         </div>

@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// import bg from '../../public/bgLogo.svg'
 const HeroSection = () => {
   return (
     <section>
@@ -44,7 +43,7 @@ const HeroSection = () => {
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
                   <Image
-                    src='/logos/whatsapp.svg'
+                    src="/logos/whatsapp.svg"
                     alt="WhatsApp"
                     width={5}
                     height={5}
@@ -57,7 +56,7 @@ const HeroSection = () => {
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
                   <Image
-                    src='/logos/telegram.svg'
+                    src="/logos/telegram.svg"
                     alt="Telegram"
                     width={5}
                     height={5}
@@ -70,7 +69,7 @@ const HeroSection = () => {
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
                   <Image
-                    src='/logos/linkedin.svg'
+                    src="/logos/linkedin.svg"
                     alt="LinkedIn"
                     width={5}
                     height={5}
@@ -83,7 +82,7 @@ const HeroSection = () => {
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                 <Link href="#">
                   <Image
-                    src='/logos/insta.svg'
+                    src="/logos/insta.svg"
                     alt="Instagram"
                     width={5}
                     height={5}

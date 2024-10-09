@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import Service from "../../components/ui/Service"
 const Services = () => {
+  const items=[{image:"/services/social.svg",service:"Social Media Management",description:" Boost your brand&apos;s presence with content scheduling,engagement, and performance analytics."}]
   return (
     <section>
       <div className="text-center mx-3 mb-32">
@@ -13,6 +15,9 @@ const Services = () => {
           marketing.
         </p>
         {/* Cards */}
+
+
+        <Service items={items}/>
         <div className="flex justify-center mt-8 flex-wrap">
           {/* Social */}
           <div className="relative w-[400px] h-[450px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-90% bg-opacity-30">
@@ -97,15 +102,20 @@ const Services = () => {
             <div className="absolute h-[100%] w-[100%] bg-[url('/services/bggrid.png')]"></div>
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] ">
-                <Image src="/services/performance.svg" height={100} width={100} />
+                <Image
+                  src="/services/performance.svg"
+                  height={100}
+                  width={100}
+                />
               </div>
 
               <div className="text-start ">
                 <p className="text-lg sm:text-xl md:text-2xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                Performance Marketing & Paid Media
+                  Performance Marketing & Paid Media
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                Drive traffic and boost conversions with data-driven paid media strategies.
+                  Drive traffic and boost conversions with data-driven paid
+                  media strategies.
                 </p>
               </div>
               <a
@@ -116,7 +126,6 @@ const Services = () => {
               </a>
             </div>
           </div>
-
 
           {/* SEO */}
           <div className="relative w-[400px] h-[450px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-90% bg-opacity-30">
@@ -128,10 +137,11 @@ const Services = () => {
 
               <div className="text-start ">
                 <p className="text-lg sm:text-xl md:text-2xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                Search Engine Optimization (SEO)
+                  Search Engine Optimization (SEO)
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                Improve your search rankings and attract organic traffic with effective SEO techniques.
+                  Improve your search rankings and attract organic traffic with
+                  effective SEO techniques.
                 </p>
               </div>
               <a
@@ -143,8 +153,8 @@ const Services = () => {
             </div>
           </div>
 
-{/* Brand */}
-<div className="relative w-[400px] h-[450px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-90% bg-opacity-30">
+          {/* Brand */}
+          <div className="relative w-[400px] h-[450px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-90% bg-opacity-30">
             <div className="absolute h-[100%] w-[100%] bg-[url('/services/bggrid.png')]"></div>
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] ">
@@ -153,10 +163,11 @@ const Services = () => {
 
               <div className="text-start ">
                 <p className="text-lg sm:text-xl md:text-2xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                Branding and Designing
+                  Branding and Designing
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                Create a memorable brand image with our comprehensive branding and design services.
+                  Create a memorable brand image with our comprehensive branding
+                  and design services.
                 </p>
               </div>
               <a
@@ -168,9 +179,8 @@ const Services = () => {
             </div>
           </div>
 
-
-{/* Ecommerce */}
-<div className="relative w-[400px] h-[450px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-90% bg-opacity-30">
+          {/* Ecommerce */}
+          <div className="relative w-[400px] h-[450px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-90% bg-opacity-30">
             <div className="absolute h-[100%] w-[100%] bg-[url('/services/bggrid.png')]"></div>
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] ">
@@ -179,10 +189,11 @@ const Services = () => {
 
               <div className="text-start ">
                 <p className="text-lg sm:text-xl md:text-2xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                E-Commerce Marketing
+                  E-Commerce Marketing
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                Increase your online sales with tailored e-commerce marketing strategies.
+                  Increase your online sales with tailored e-commerce marketing
+                  strategies.
                 </p>
               </div>
               <a
@@ -194,21 +205,25 @@ const Services = () => {
             </div>
           </div>
 
-
-{/* influencer */}
-<div className="relative w-[400px] h-[450px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-90% bg-opacity-30">
+          {/* influencer */}
+          <div className="relative w-[400px] h-[450px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-90% bg-opacity-30">
             <div className="absolute h-[100%] w-[100%] bg-[url('/services/bggrid.png')]"></div>
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] ">
-                <Image src="/services/influencer.svg" height={100} width={100} />
+                <Image
+                  src="/services/influencer.svg"
+                  height={100}
+                  width={100}
+                />
               </div>
 
               <div className="text-start ">
                 <p className="text-lg sm:text-xl md:text-2xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                Influencer Marketing
+                  Influencer Marketing
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                Amplify your brand's reach with authentic influencer campaigns.
+                  Amplify your brand's reach with authentic influencer
+                  campaigns.
                 </p>
               </div>
               <a
@@ -220,9 +235,8 @@ const Services = () => {
             </div>
           </div>
 
-
-{/* influencer */}
-<div className="relative w-[400px] h-[450px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-90% bg-opacity-30">
+          {/* influencer */}
+          <div className="relative w-[400px] h-[450px] mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-90% bg-opacity-30">
             <div className="absolute h-[100%] w-[100%] bg-[url('/services/bggrid.png')]"></div>
             <div className="m-5 relative h-[90%] ">
               <div className="w-[100px] h-[100px] ">
@@ -231,10 +245,11 @@ const Services = () => {
 
               <div className="text-start ">
                 <p className="text-lg sm:text-xl md:text-2xl font-bold mt-6 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                Google Ads
+                  Google Ads
                 </p>
                 <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-2">
-                Reach your target audience effectively with optimized Google Ads campaigns.
+                  Reach your target audience effectively with optimized Google
+                  Ads campaigns.
                 </p>
               </div>
               <a
@@ -245,9 +260,6 @@ const Services = () => {
               </a>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </section>

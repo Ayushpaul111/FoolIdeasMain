@@ -1,13 +1,13 @@
-"use client"
+"use client";
 import React, { useEffect, useRef } from "react";
 import CountUp from "react-countup";
 import { useInView } from "framer-motion";
 const Story = () => {
-  const ref=useRef();
-  const isInView=useInView(ref,{once:true})
-  useEffect(()=>{
-      console.log("In View ",isInView)
-  },[isInView])
+  const ref = useRef();
+  const isInView = useInView(ref, { once: true });
+  useEffect(() => {
+    console.log("In View ", isInView);
+  }, [isInView]);
   return (
     <div className="flex flex-wrap justify-center gap-16  text-[#B1C8BF] mb-28 sm:mx-10 mx-5 mt-36">
       <div className="lg:w-[50%]  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10]">
@@ -28,8 +28,11 @@ const Story = () => {
       <div className="grid  grid-cols-2 lg:w-[40%] sm:w-[80%] w-auto sm:mx-4 gap-3 ">
         <div className="  ">
           <div>
-            <p ref={ref}  className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
-             {isInView && (<CountUp end={200}/>)}+
+            <p
+              ref={ref}
+              className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%"
+            >
+              {isInView && <CountUp end={200} />}+
             </p>
             <p>Completed Projects</p>
           </div>
@@ -37,7 +40,7 @@ const Story = () => {
         <div className=" ">
           <div>
             <p className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
-              {isInView && (<CountUp end={8}/>)}+
+              {isInView && <CountUp end={8} />}+
             </p>
             <p>Service Provided</p>
           </div>
@@ -45,7 +48,7 @@ const Story = () => {
         <div className="">
           <div>
             <p className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
-            {isInView && (<CountUp end={95}/>)}+
+              {isInView && <CountUp end={95} />}+
             </p>
             <p>Client Reviews</p>
           </div>

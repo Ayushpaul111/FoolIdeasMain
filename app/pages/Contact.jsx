@@ -1,4 +1,3 @@
-import { section } from "framer-motion/client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -28,7 +27,6 @@ const Contact = () => {
                   name="firstname"
                   id="firstname"
                   placeholder="First Name"
-                  //   value="value"
                   className="mt-2 w-full sm:p-3 p-2 bg-[#001C10] placeholder:text-[#b1c8bf92] rounded-lg border-[1px] border-[#007443A3]"
                 />
               </div>
