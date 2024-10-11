@@ -1,6 +1,11 @@
 import Image from "next/image";
 import miniLogo from "../../components/vectors/miniLogo.svg";
 import circle from "../../components/vectors/circleWhite.svg";
+import facebook from "../../components/vectors/facebook.webp";
+import insta from "../../components/vectors/insta.png";
+import whatsapp from "../../components/vectors/whatsapp.png";
+import linkedin from "../../components/vectors/linkedin.png";
+import telegram from "../../components/vectors/telegram.png";
 
 const About = () => {
   return (
@@ -31,7 +36,7 @@ const About = () => {
             {/* Profile 1 (Top Center) */}
             <div className="absolute top-[-33px] left-[80px] animate-[spin_reverse_12s_linear_infinite]">
               <Image
-                src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
+                src={facebook}
                 width={80}
                 height={80}
                 className="rounded-full "
@@ -43,7 +48,7 @@ const About = () => {
             {/* Profile 2 (Top-Left) */}
             <div className="absolute top-[50px] left-[-23px] animate-[spin_reverse_12s_linear_infinite]">
               <Image
-                src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
+                src={insta}
                 width={80}
                 height={80}
                 className="rounded-full "
@@ -55,7 +60,7 @@ const About = () => {
             {/* Profile 3 (Top-Right) */}
             <div className="absolute top-[50px] right-[-25px] animate-[spin_reverse_12s_linear_infinite]">
               <Image
-                src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
+                src={whatsapp}
                 width={80}
                 height={80}
                 className="rounded-full "
@@ -67,7 +72,7 @@ const About = () => {
             {/* Profile 4 (Bottom-Left) */}
             <div className="absolute bottom-[-10px] left-[15px] animate-[spin_reverse_12s_linear_infinite]">
               <Image
-                src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
+                src={linkedin}
                 width={80}
                 height={80}
                 className="rounded-full "
@@ -79,7 +84,7 @@ const About = () => {
             {/* Profile 5 (Bottom-Right) */}
             <div className="absolute bottom-0 right-[10px] animate-[spin_reverse_12s_linear_infinite]">
               <Image
-                src="https://cdn-icons-png.flaticon.com/512/219/219969.png"
+                src={telegram}
                 width={80}
                 height={80}
                 className="rounded-full "
@@ -96,7 +101,7 @@ const About = () => {
           <Image
             src={miniLogo}
             alt="Mini Logo"
-            className="absolute animate-[spin_reverse_12s_linear_infinite]"
+            className=" z-10 absolute animate-[spin_reverse_12s_linear_infinite]"
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-52 bg-[#19A069] rounded-full blur-3xl opacity-30 z-0"></div>
         </div>

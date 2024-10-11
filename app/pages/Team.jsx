@@ -15,6 +15,11 @@ const Team = () => {
       role: "Graphic Designer",
     },
     {
+      name: "Ayush Paul",
+      image: "/team_images/AyushPaul.png",
+      role: "Developer",
+    },
+    {
       name: "Sudip Adhikary",
       image: "/team_images/SudipAdhikary.jpg",
       role: "Photographer",
@@ -29,7 +34,6 @@ const Team = () => {
       image: "/team_images/DebaratiBhattacharya.jpg",
       role: "Content Writer",
     },
-    
   ];
   return (
     <div className=" my-32">
@@ -40,7 +44,7 @@ const Team = () => {
         Guiding Your Success Every Step of the Way
       </p>
 
-      <InfiniteMovingTeam items={items} className="mt-8" speed="fast" />
+      <InfiniteMovingTeam items={items} className="mt-8" speed="slow" />
     </div>
   );
 };

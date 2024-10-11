@@ -67,14 +67,19 @@ export const InfiniteMovingIcons = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          " flex min-w-full shrink-0 gap-0 py-4 w-max flex-nowrap",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
           <li key={item.image}>
-            <Image src={item.image} width={200} height={500} className=" w-[200px] h-[200px] object-contain"/>
+            <Image
+              src={item.image}
+              width={200}
+              height={500}
+              className=" w-[200px] h-[200px] object-contain"
+            />
           </li>
         ))}
       </ul>

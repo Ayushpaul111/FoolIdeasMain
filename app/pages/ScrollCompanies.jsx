@@ -5,7 +5,7 @@ import { InfiniteMovingIcons } from "../../components/ui/infinite-moving-icons";
 
 const ScrollCompanies = () => {
   return (
-    <div className="h-[10rem] rounded-md flex flex-col antialiased items-center justify-center relative mb-32 grayscale">
+    <div className="h-[15px] rounded-md flex flex-col antialiased items-center justify-center relative mb-32 grayscale">
       <InfiniteMovingIcons
         items={testimonials}
         // direction="right"
@@ -24,9 +24,7 @@ const testimonials = [
   // {
   //   image: "/companies/comp2.jpg",
   // },
-  {
-    image: "/companies/comp3.png",
-  },
+
   // {
   //   image: "/companies/comp4.png",
   // },
@@ -48,6 +46,9 @@ const testimonials = [
   // {
   //   image: "/companies/comp11.jpg",
   // },
+  {
+    image: "/companies/comp3.png",
+  },
   {
     image: "/companies/comp12.png",
   },
