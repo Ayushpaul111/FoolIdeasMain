@@ -5,11 +5,11 @@ import { InfiniteMovingIcons } from "../../components/ui/infinite-moving-icons";
 
 const ScrollCompanies = () => {
   return (
-    <div className="h-[10rem] rounded-md flex flex-col antialiased bg-[#00120B] items-center justify-center relative overflow-hidden mb-32">
+    <div className="h-[10rem] rounded-md flex flex-col antialiased items-center justify-center relative mb-32 grayscale">
       <InfiniteMovingIcons
         items={testimonials}
         // direction="right"
-        speed="fast"
+        speed="slow"
       />
     </div>
   );
@@ -19,42 +19,42 @@ export default ScrollCompanies;
 
 const testimonials = [
   {
-    image:"/companies/comp1.png"
+    image: "/companies/comp1.png",
+  },
+  // {
+  //   image: "/companies/comp2.jpg",
+  // },
+  {
+    image: "/companies/comp3.png",
+  },
+  // {
+  //   image: "/companies/comp4.png",
+  // },
+  {
+    image: "/companies/comp6.png",
+  },
+  // {
+  //   image: "/companies/comp7.jpg",
+  // },
+  {
+    image: "/companies/comp8.png",
   },
   {
-    image:"/companies/comp2.jpg"
-  },  
-  {
-    image:"/companies/comp3.png"
+    image: "/companies/comp9.png",
   },
+  // {
+  //   image: "/companies/comp10.jpg",
+  // },
+  // {
+  //   image: "/companies/comp11.jpg",
+  // },
   {
-    image:"/companies/comp4.jpg"
-  },  
+    image: "/companies/comp12.png",
+  },
+  // {
+  //   image: "/companies/comp13.jpg",
+  // },
   {
-    image:"/companies/comp6.jpg"
-  }, 
-  {
-    image:"/companies/comp7.jpg"
-  }, 
-  {
-    image:"/companies/comp8.jpg"
-  }, 
-  {
-    image:"/companies/comp9.jpg"
-  }, 
-  {
-    image:"/companies/comp10.jpg"
-  }, 
-  {
-    image:"/companies/comp11.jpg"
-  }, 
-  {
-    image:"/companies/comp12.jpg"
-  }, 
-  {
-    image:"/companies/comp13.jpg"
-  }, 
-  {
-    image:"/companies/comp14.jpg"
-  }, 
+    image: "/companies/comp14.png",
+  },
 ];
