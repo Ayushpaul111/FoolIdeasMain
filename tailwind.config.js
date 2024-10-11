@@ -16,6 +16,9 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
+    colors:{
+      'blue':'#B62673'
+    },
     extend: {
       animation: {
         spin_slow: "spin 3s linear infinite",

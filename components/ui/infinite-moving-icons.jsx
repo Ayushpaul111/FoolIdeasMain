@@ -3,7 +3,6 @@
 import { cn } from "../../lib/utils";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-
 export const InfiniteMovingIcons = ({
   items,
   direction = "left",
@@ -16,7 +15,7 @@ export const InfiniteMovingIcons = ({
 
   useEffect(() => {
     addAnimation();
-  },[]);
+  }, []);
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
@@ -63,37 +62,19 @@ export const InfiniteMovingIcons = ({
   return (
     <div
       ref={containerRef}
-      className={cn(
-        "scroller relative z-20  overflow-hidden flex justify-center items-center [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-        className
-      )}
+      className={cn("scroller relative z-20    ", className)}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap space-x-16",
-          start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:]" //paused
+          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          start && "animate-scroll ",
+          pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
-          <li
-            className="w-[120px] md:w-[150px] lg:w-[180px] flex-shrink-0 flex justify-center items-center"
-            key={item.image}
-          >
-            <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-              <Image
-                src={item.image}
-                alt={item.name}
-                width={200}
-                height={200}
-                className="object-contain grayscale"
-              />
-            </blockquote>
+          <li key={item.image}>
+            <Image src={item.image} width={200} height={500} className=" w-[200px] h-[200px] object-contain"/>
           </li>
         ))}
       </ul>
