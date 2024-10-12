@@ -14,7 +14,7 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="flex  flex-wrap">
+      <div className="flex md:justify-center justify-start   flex-wrap">
         <div className="sm:m-10 mt-10 lg:w-[50%] w-full text-[#B1C8BF]  text-base sm:text-lg md:text-xl ">
           <form action="">
             <div className="grid sm:grid-cols-2 grid-cols-1 gap-4">
@@ -85,122 +85,136 @@ const Contact = () => {
             </div>
             <Link
               href="#"
-              className="bg-green-600 px-6 text-sm sm:text-lg py-3 rounded-full text-white hover:bg-green-700"
+              className="bg-green-600 px-6 text-sm sm:text-lg py-3 rounded-full text-[#fff] hover:bg-green-700"
             >
               Send Message
             </Link>
           </form>
         </div>
         <div className="sm:m-10 sm:w-fit mt-10 ">
-          <h1 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-            Chat with us
-          </h1>
-          <p className="font-play mt-5 text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
-            chat with our friendly team via livechat
-          </p>
-          <div className="flex gap-8 mt-2">
-            <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
-              <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
-                <Link href="#">
-                  <Image
-                    src="/logos/whatsapp.svg"
-                    alt="WhatsApp"
-                    width={5}
-                    height={5}
-                    className="w-5 h-5 sm:w-6 sm:h-6"
-                  />
-                </Link>
+          <div>
+            <h1 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+              Chat with us
+            </h1>
+            <p className="font-play mt-5 text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
+              chat with our friendly team via livechat
+            </p>
+            <div className="flex gap-8 mt-2 ">
+              <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
+                <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
+                  <Link href="https://wa.me/+917427983047" target="_blank">
+                    <Image
+                      src="/logos/whatsapp.svg"
+                      alt="WhatsApp"
+                      width={5}
+                      height={5}
+                      className="w-5 h-5 sm:w-6 sm:h-6"
+                    />
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
-              <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
-                <Link href="#">
-                  <img
-                    src="/logos/telegram.svg"
-                    alt="Telegram"
-                    width={5}
-                    height={5}
-                    className="w-5 h-5 sm:w-6 sm:h-6"
-                  />
-                </Link>
+              <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
+                <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
+                  <Link
+                    href="https://www.facebook.com/profile.php?id=61560007932405"
+                    target="_blank"
+                  >
+                    <Image
+                      src="/logos/telegram.svg"
+                      alt="Telegram"
+                      width={5}
+                      height={5}
+                      className="w-5 h-5 sm:w-6 sm:h-6"
+                    />
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
-              <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
-                <Link href="#">
-                  <img
-                    src="/logos/linkedin.svg"
-                    alt="LinkedIn"
-                    width={5}
-                    height={5}
-                    className="w-5 h-5 sm:w-6 sm:h-6"
-                  />
-                </Link>
+              <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
+                <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
+                  <Link
+                    href="https://www.linkedin.com/company/foolideas/posts/?feedView=all"
+                    target="_blank"
+                  >
+                    <Image
+                      src="/logos/linkedin.svg"
+                      alt="LinkedIn"
+                      width={5}
+                      height={5}
+                      className="w-5 h-5 sm:w-6 sm:h-6"
+                    />
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
-              <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
-                <Link href="#">
-                  <img
-                    src="/logos/insta.svg"
-                    alt="Instagram"
-                    width={5}
-                    height={5}
-                    className="w-5 h-5 sm:w-6 sm:h-6"
-                  />
-                </Link>
+              <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
+                <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
+                  <Link
+                    href="https://www.instagram.com/foolideas/"
+                    target="_blank"
+                  >
+                    <Image
+                      src="/logos/insta.svg"
+                      alt="Instagram"
+                      width={5}
+                      height={5}
+                      className="w-5 h-5 sm:w-6 sm:h-6"
+                    />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-
-          <h1 className="mt-8 text-2xl sm:text-3xl md:text-4xl font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-            Call us
-          </h1>
-          <p className="font-play mt-5 text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
-            Call our team Mon-Fri from 9 am to 6 pm
-          </p>
-          <div className="flex items-center">
-            <div className="rounded-xl w-fit mt-2 text-[#38be87] p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
-              <div className="w-fit bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
-                <Link href="#">
-                  <img
-                    src="/logos/phone.svg"
-                    alt="Instagram"
-                    width={5}
-                    height={5}
-                    className="w-5 h-5 sm:w-6 sm:h-6"
-                  />
-                </Link>
-              </div>
-            </div>
-            <p className="ml-5 text-base sm:text-lg md:text-xl text-[#B1C8BF]">
-              +91 80011 63598
+          <div>
+            <h1 className="mt-8 text-2xl sm:text-3xl md:text-4xl font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+              Call us
+            </h1>
+            <p className="font-play mt-5 text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
+              Call our team Mon-Fri from 9 am to 6 pm
             </p>
+            <div className="flex items-center">
+              <div className="rounded-xl w-fit mt-2 text-[#38be87] p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
+                <div className="w-fit bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
+                  <Link href="#">
+                    <Image
+                      src="/logos/phone.svg"
+                      alt="phone"
+                      width={5}
+                      height={5}
+                      className="w-5 h-5 sm:w-6 sm:h-6"
+                    />
+                  </Link>
+                </div>
+              </div>
+              <p className="ml-5 text-base sm:text-lg md:text-xl text-[#B1C8BF]">
+                +91 80011 63598
+              </p>
+            </div>
           </div>
 
-          <h1 className="mt-8 text-2xl sm:text-3xl md:text-4xl font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-            Visit us
-          </h1>
-          <p className="font-play mt-5 text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
-            Meet with us in person to our HQ
-          </p>
-          <div className="flex items-center">
-            <div className="rounded-xl w-fit mt-2 text-[#38be87] p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
-              <div className="w-fit bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
-                <Link href="#">
-                  <img
-                    src="/logos/location.svg"
-                    alt="Instagram"
-                    width={5}
-                    height={5}
-                    className="w-5 h-5 sm:w-6 sm:h-6"
-                  />
-                </Link>
-              </div>
-            </div>
-            <p className="ml-5 text-base sm:text-lg md:text-xl text-[#B1C8BF]">
-              Coochbehar , West Bengal
+          <div>
+            <h1 className="mt-8 text-2xl sm:text-3xl md:text-4xl font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+              Visit us
+            </h1>
+            <p className="font-play mt-5 text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
+              Meet with us in person to our HQ
             </p>
+            <div className="flex items-center">
+              <div className="rounded-xl w-fit mt-2 text-[#38be87] p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
+                <div className="w-fit bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
+                  <Link href="#">
+                    <img
+                      src="/logos/location.svg"
+                      alt="Instagram"
+                      width={5}
+                      height={5}
+                      className="w-5 h-5 sm:w-6 sm:h-6"
+                    />
+                  </Link>
+                </div>
+              </div>
+              <p className="ml-5 text-base sm:text-lg md:text-xl text-[#B1C8BF]">
+                Coochbehar , West Bengal
+              </p>
+            </div>
           </div>
         </div>
       </div>

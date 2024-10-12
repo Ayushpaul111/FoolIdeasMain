@@ -7,11 +7,11 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <section>
-      <div className="w-full h-screen bg-[url('/bgGrid.svg')] bg-cover bg-center">
+      <div className="w-full py-36 bg-[url('/bgGrid.svg')] bg-cover bg-center">
         <div className=" bg-[url('/bgLogo.svg')] w-[85%] mx-auto bg-contain h-full bg-no-repeat bg-center flex items-center justify-center">
           {/* Content */}
           <div className="relative z-10 text-center px-5">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-play  font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-55% to-[#4C685D] to-100% py-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-play  font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-55% to-[#4C685D] to-100% py-8">
               Empowering Your Brand,
               <br />
               Elevating Your Business
@@ -22,17 +22,23 @@ const HeroSection = () => {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center items-center">
               <Link
-                href="#"
+                href=""
                 className="bg-green-600 px-6 py-3 rounded-full text-white hover:bg-green-700"
               >
                 Quick Contact
               </Link>
+
               <Link
                 href="#"
-                className="border border-green-600 px-6 py-3 rounded-full text-white hover:bg-green-700 flex items-center"
+                className="border border-green-600  rounded-full text-white hover:bg-green-700 bg-darkGreen flex items-center"
               >
-                Book A Consultation
-                <span className="ml-2">📅</span>
+                <div className="relative inline-flex group">
+                  <div className="absolute transitiona-all duration-1000 opacity-50 -inset-px bg-gradient-to-b from-[#059669] via-[#34D399] to-[#112F24] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                  <div className="relative inline-flex items-center justify-center px-5 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                    Book A Consultation
+                    <span className="ml-2">📅</span>
+                  </div>
+                </div>
               </Link>
             </div>
           </div>

@@ -26,7 +26,7 @@ const Navbar = () => {
         <div
           className={`relative md:contents ${menu ? "flex" : "hidden"}  w-full`}
         >
-          <div className=" md:flex items-center md:space-x-8 md:border p-3 pl-6 md:rounded-full md:border-[#FFFFFF14]">
+          <div className=" md:flex items-center md:space-x-8 md:border p-3 px-6 md:rounded-full md:border-[#FFFFFF14]">
             <Link href="#" className="hover:text-green-400 text-sm">
               About Us
             </Link>
