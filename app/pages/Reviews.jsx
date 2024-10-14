@@ -15,31 +15,34 @@ const Reviews = () => {
   ];
   const reviews = [
     {
-      name: "xkjbkj",
-      review: "dinm jbe geiwgiw ewigeiegi",
-      platform: "fiver",
-      location: "usa",
-      image: "/team_images/biru.png",
+      name: "Soumen Chowdhury",
+      review:
+        "We have the best journey with this agency because of their punctuality, dedication and unblemished high quality work and friendly behavior. Want to do more work with you and to grow much too. Best digital marketing agency in North Bengal.",
+      platform: "Chowdhury Medical",
+      location: "West Bengal",
+      image: "/reviews/SoumenChowdhury.jpg",
       stars: 4,
     },
     {
-      name: "Suman Das",
-      review: "Amzing Work done by Bireswar Das",
-      platform: "linkedin",
+      name: "Dr. Partha Pratim Debnath",
+      review:
+        "Happy with the service provided by Bireswar and team… very sincere and dedicated towards the work… keep growing… all the best👍🏻",
+      platform: "Dr. Partha Pratim",
       location: "Cooch Behar",
-      image: "/team_images/biru.png",
+      image: "/reviews/DrPrathaPratim.jpg",
       stars: 5,
     },
     {
-      name: "xkjebk",
-      review: "dilken owie iwoiwi woop oiwin",
-      platform: "fiver",
-      location: "usa",
-      image: "/team_images/biru.png",
+      name: "Farid Pramanik",
+      review:
+        "The service provided by you is undoubtedly praiseworthy.Your team is expert in designing that is proved in the design. The advertisement really attracts the viewers .In short , the fact of digital marketing always gets fulfilment in the hands of your team.",
+      platform: "Mtb education",
+      location: "India",
+      image: "/reviews/mtbLogo.png",
       stars: 4,
     },
     {
-      name: "Suman Das",
+      name: "Ayush Paul",
       review: "Amzing Work done by Bireswar Das",
       platform: "linkedin",
       location: "Cooch Behar",

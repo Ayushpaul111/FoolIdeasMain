@@ -8,7 +8,7 @@ const TeamLead = () => {
         Our Team Lead
       </h1>
       <p className="font-play mt-6 text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
-        Guiding Your Success Every Step of the Way
+        &ldquo;Be together Build together&rdquo;
       </p>
       {/* Leader Card */}
 
@@ -24,11 +24,11 @@ const TeamLead = () => {
             <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-5">
               Bireswar is a seasoned marketing specialist with over 7 years of
               experience in driving digital marketing strategies for top brands.
-              She excels in crafting compelling campaigns that resonate with
+              He excels in crafting compelling campaigns that resonate with
               target audiences and boost brand visibility. With a deep
               understanding of market trends and a creative approach to
-              problem-solving, Emma leads our marketing team with a passion for
-              innovation and results. Her expertise spans content marketing,
+              problem-solving, Bireswar leads our marketing team with a passion
+              for innovation and results. His expertise spans content marketing,
               social media strategy, and data-driven decision-making, ensuring
               our clients achieve measurable growth and success.
             </p>

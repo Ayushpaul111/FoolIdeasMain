@@ -17,11 +17,12 @@ const Story = () => {
             Our Story
           </p>
           <p className="mt-4 text-base sm:text-lg md:text-xl">
-            With a background in marketing and a passion for creativity,
-            Bireswar Das established Foolideas to bridge the gap between
-            brilliant ideas and successful marketing campaigns. Over the past 5
-            years, we have grown into a trusted partner for businesses seeking
-            to enhance their brand and drive growth.
+            We&apos;re not just another marketing agency — we&apos;re a creative
+            powerhouse fueled by fresh ideas, innovative approaches, and a
+            relentless dedication to results. Whether it&apos;s crafting a
+            captivating social media campaign or launching a powerful Google ad
+            strategy, we know that behind every successful brand is a
+            well-executed idea. That&apos;s where Foolideas comes in.
           </p>
         </div>
       </div>
@@ -50,17 +51,17 @@ const Story = () => {
             <p className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
               {isInView && <CountUp end={95} />}+
             </p>
-            <p>Client Reviews</p>
+            <p>Happy Clients</p>
           </div>
         </div>
-        <div className=" ">
+        {/* <div className=" ">
           <div>
             <p className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
               24/7
             </p>
             <p>Customer Support</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
