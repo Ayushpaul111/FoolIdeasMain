@@ -54,14 +54,14 @@ const Story = () => {
             <p>Happy Clients</p>
           </div>
         </div>
-        {/* <div className=" ">
+        <div className=" ">
           <div>
             <p className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
-              24/7
+              {isInView && <CountUp end={5000} />}+
             </p>
-            <p>Customer Support</p>
+            <p>Been in this field</p>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

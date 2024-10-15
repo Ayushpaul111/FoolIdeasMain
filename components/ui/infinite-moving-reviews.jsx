@@ -18,6 +18,7 @@ export const InfiniteMovingReviews = ({
     for (let i = 0; i < n; i++) {
       stars.push(
         <Image
+          key={i}
           src="/star.svg"
           alt="star"
           width={3}
@@ -91,19 +92,21 @@ export const InfiniteMovingReviews = ({
         )}
       >
         {items.map((item, idx) => (
-          <div
+          <li
             key={idx}
             className="sm:w-[300px] w-[250px]  mx-3 my-3  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10] "
           >
-            <div className="text-start  m-3">
-              <p className=" font-bold md:text-lg sm:text-base text-sm bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-                {item.platform}
-              </p>
-              <p className="text-[#B1C8BF] md:text-base sm:text-sm text-xs mt-4">
-                {item.review}
-              </p>
-              <div className="flex mt-3 gap-1 items-center ">
-                {getstars(item.stars)}
+            <div className="text-start  m-3 flex flex-col md:justify-between md:min-h-[330px]">
+              <div>
+                <p className=" font-bold md:text-lg sm:text-base text-sm bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
+                  {item.platform}
+                </p>
+                <p className="text-[#B1C8BF] md:text-base sm:text-sm text-xs mt-4">
+                  {item.review}
+                </p>
+                <div className="flex mt-3 gap-1 items-center ">
+                  {getstars(item.stars)}
+                </div>
               </div>
               <div className="flex mt-3 items-center">
                 <div className="w-[50px] h-[50px] rounded-full overflow-hidden">
@@ -124,7 +127,7 @@ export const InfiniteMovingReviews = ({
                 </div>
               </div>
             </div>
-          </div>
+          </li>
         ))}
       </ul>
     </div>
