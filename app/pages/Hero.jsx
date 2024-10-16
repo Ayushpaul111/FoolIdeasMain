@@ -22,14 +22,16 @@ const HeroSection = () => {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center items-center">
               <Link
-                href=""
+                href="https://wa.me/+917427983047"
+                target="_blank"
                 className="bg-green-600 px-6 py-3 rounded-full text-white hover:bg-green-700"
               >
                 Quick Contact
               </Link>
 
               <Link
-                href="#"
+                href="https://wa.me/+917427983047"
+                target="_blank"
                 className="border border-green-600  rounded-full text-white hover:bg-green-700 bg-darkGreen flex items-center"
               >
                 <div className="relative inline-flex group">
