@@ -14,8 +14,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  // darkMode: "class",
+  darkMode: "class",
   theme: {
+    colors:{
+      'blue':'#B62673'
+    },
     extend: {
       animation: {
         spin_slow: "spin 3s linear infinite",
@@ -30,9 +33,8 @@ module.exports = {
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
-        spin_reverse:{
-          '0%, 100%': { transform: 'rotate(-360deg)' },
-          
+        spin_reverse: {
+          "0%, 100%": { transform: "rotate(-360deg)" },
         },
         aurora: {
           from: {
@@ -64,20 +66,20 @@ module.exports = {
   },
   plugins: [
     addVariablesForColors,
-    function ({ matchUtilities, theme }: any) {
+    function ({ matchUtilities, theme }) {
       matchUtilities(
         {
-          "bg-grid": (value: any) => ({
+          "bg-grid": (value) => ({
             backgroundImage: `url("${svgToDataUri(
               `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="100" height="100" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
             )}")`,
           }),
-          "bg-grid-small": (value: any) => ({
+          "bg-grid-small": (value) => ({
             backgroundImage: `url("${svgToDataUri(
               `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="8" height="8" fill="none" stroke="${value}"><path d="M0 .5H31.5V32"/></svg>`
             )}")`,
           }),
-          "bg-dot": (value: any) => ({
+          "bg-dot": (value) => ({
             backgroundImage: `url("${svgToDataUri(
               `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="1.6257413380501518"></circle></svg>`
             )}")`,
@@ -90,7 +92,7 @@ module.exports = {
 };
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
-function addVariablesForColors({ addBase, theme }: any) {
+function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])

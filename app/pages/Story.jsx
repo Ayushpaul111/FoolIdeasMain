@@ -1,54 +1,65 @@
-import React from "react";
-
+"use client";
+import React, { useEffect, useRef } from "react";
+import CountUp from "react-countup";
+import { useInView } from "framer-motion";
 const Story = () => {
+  const ref = useRef();
+  const isInView = useInView(ref, { once: true });
+  useEffect(() => {
+    console.log("In View ", isInView);
+  }, [isInView]);
   return (
     <div className="flex flex-wrap justify-center gap-16  text-[#B1C8BF] mb-28 sm:mx-10 mx-5 mt-36">
-      <div className="sm:w-[50%] w-[300px] border-[1px] border-[#007443A3] rounded-lg bg-[#001C10]">
+      <div className="lg:w-[50%]  border-[1px] border-[#007443A3] rounded-lg bg-[#001C10]">
         <div className="sm:mx-7 m-5 my-8">
           {" "}
           <p className="text-2xl sm:text-3xl md:text-4xl font-semibold  bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
             Our Story
           </p>
           <p className="mt-4 text-base sm:text-lg md:text-xl">
-            With a background in marketing and a passion for creativity,
-            Bireswar Das established Foolideas to bridge the gap between
-            brilliant ideas and successful marketing campaigns. Over the past 5
-            years, we have grown into a trusted partner for businesses seeking
-            to enhance their brand and drive growth.
+            We&apos;re not just another marketing agency — we&apos;re a creative
+            powerhouse fueled by fresh ideas, innovative approaches, and a
+            relentless dedication to results. Whether it&apos;s crafting a
+            captivating social media campaign or launching a powerful Google ad
+            strategy, we know that behind every successful brand is a
+            well-executed idea. That&apos;s where Foolideas comes in.
           </p>
         </div>
       </div>
-      <div className="grid  grid-cols-2 sm:w-[40%] mx-4 gap-y-3">
-        <div className="  flex items-center">
+      <div className="grid  grid-cols-2 lg:w-[40%] sm:w-[80%] w-auto sm:mx-4 gap-3 ">
+        <div className="  ">
           <div>
-            <p className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
-              200+
+            <p
+              ref={ref}
+              className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%"
+            >
+              {isInView && <CountUp end={200} />}+
             </p>
             <p>Completed Projects</p>
           </div>
         </div>
-        <div className=" flex items-center  ">
+        <div className=" ">
           <div>
             <p className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
-              8+
+              {isInView && <CountUp end={8} />}+
             </p>
             <p>Service Provided</p>
           </div>
         </div>
-        <div className="  flex items-center  ">
+        <div className="">
           <div>
             <p className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
-              95+
+              {isInView && <CountUp end={45} />}+
             </p>
-            <p>Client Reviews</p>
+            <p>Happy Clients</p>
           </div>
         </div>
-        <div className="  flex items-center  ">
+        <div className=" ">
           <div>
             <p className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
-              24/7
+              {isInView && <CountUp end={5000} />}+
             </p>
-            <p>Customer Support</p>
+            <p>Been in this field</p>
           </div>
         </div>
       </div>
