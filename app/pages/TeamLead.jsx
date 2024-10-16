@@ -19,7 +19,7 @@ const TeamLead = () => {
               Bireswar das
             </p>
             <p className="mt-5 text-base sm:text-lg md:text-xl text-[#B1C8BF] ">
-              Marketing Speialist and Team Lead
+              Founder & CEO
             </p>
             <p className="text-[#B1C8BF] text-base sm:text-lg md:text-xl mt-5">
               Bireswar is a seasoned marketing specialist with over 7 years of
@@ -35,7 +35,7 @@ const TeamLead = () => {
             <div className="flex mt-5 gap-10">
               <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
                 <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
-                  <Link href="#">
+                  <Link href="https://www.linkedin.com/in/bireswar-das-78378a315/">
                     <img
                       src="/logos/linkedin.svg"
                       alt="Linkedin"
@@ -46,7 +46,7 @@ const TeamLead = () => {
               </div>
               <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
                 <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
-                  <Link href="#">
+                  <Link href="https://www.instagram.com/bireswar07/">
                     <img
                       src="/logos/insta.svg"
                       alt="Instagram"

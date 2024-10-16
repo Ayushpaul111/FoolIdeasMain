@@ -49,7 +49,7 @@ const Story = () => {
         <div className="">
           <div>
             <p className=" text-[35px] font-semibold bg-clip-text text-transparent bg-gradient-to-br from-white from-40%  to-green-800 to-70%">
-              {isInView && <CountUp end={95} />}+
+              {isInView && <CountUp end={45} />}+
             </p>
             <p>Happy Clients</p>
           </div>

@@ -120,11 +120,11 @@ const Contact = () => {
                     target="_blank"
                   >
                     <Image
-                      src="/logos/telegram.svg"
-                      alt="Telegram"
+                      src="/logos/facebook-green.svg"
+                      alt="Facebook"
                       width={5}
                       height={5}
-                      className="w-5 h-5 sm:w-6 sm:h-6"
+                      className="w-5 h-5 sm:w-6 sm:h-6 rounded-md"
                     />
                   </Link>
                 </div>
@@ -185,7 +185,7 @@ const Contact = () => {
                 </div>
               </div>
               <p className="ml-5 text-base sm:text-lg md:text-xl text-[#B1C8BF]">
-                +91 80011 63598
+                +91 74279 83047
               </p>
             </div>
           </div>

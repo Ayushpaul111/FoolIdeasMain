@@ -24,7 +24,8 @@ const Service = ({ items }) => {
                 </p>
               </div>
               <a
-                href=""
+                href="https://wa.me/+917427983047"
+                target="_blank"
                 className="bg-[#001C10] rounded-full text-sm sm:text-base md:text-lg px-4 py-2 border-[1px] border-green-300 text-white absolute bottom-0 left-0"
               >
                 Learn More

@@ -4,14 +4,14 @@ import { ReviewStack } from "../../components/ui/ReviewStack";
 import { InfiniteMovingReviews } from "../../components/ui/infinite-moving-reviews";
 const Reviews = () => {
   const reviewers = [
-    "/team_images/biru.png",
-    "/team_images/biru.png",
-    "/team_images/biru.png",
-    "/team_images/biru.png",
-    "/team_images/biru.png",
-    "/team_images/biru.png",
-    "/team_images/biru.png",
-    "/team_images/biru.png",
+    "/reviews/SoumenChowdhury.jpg",
+    "/reviews/DrPrathaPratim.jpg",
+    "/reviews/mtbLogo.png",
+    // "/team_images/biru.png",
+    // "/team_images/biru.png",
+    // "/team_images/biru.png",
+    // "/team_images/biru.png",
+    // "/team_images/biru.png",
   ];
   const reviews = [
     {
@@ -21,7 +21,7 @@ const Reviews = () => {
       platform: "Chowdhury Medical",
       location: "West Bengal",
       image: "/reviews/SoumenChowdhury.jpg",
-      stars: 4,
+      stars: 5,
     },
     {
       name: "Dr. Partha Pratim Debnath",
@@ -39,20 +39,20 @@ const Reviews = () => {
       platform: "Mtb education",
       location: "India",
       image: "/reviews/mtbLogo.png",
-      stars: 4,
-    },
-    {
-      name: "Ayush Paul",
-      review: "Amzing Work done by Bireswar Das",
-      platform: "linkedin",
-      location: "Cooch Behar",
-      image: "/team_images/biru.png",
       stars: 5,
     },
+    // {
+    //   name: "Ayush Paul",
+    //   review: "Amzing Work done by Bireswar Das",
+    //   platform: "linkedin",
+    //   location: "Cooch Behar",
+    //   image: "/team_images/biru.png",
+    //   stars: 5,
+    // },
   ];
   return (
     <section className="mx-5 my-10 ">
-      <div className="flex flex-wrap flex">
+      <div className="flex flex-wrap">
         <div className="sm:w-[40%] w-full sm:m-10">
           <h1 className=" text-3xl sm:text-4xl md:text-5xl  font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
             What our customers say about Fool Ideas
@@ -105,7 +105,7 @@ const Reviews = () => {
             </p>
           </div>
         </div>
-        <div className="sm:w-auto w-full  ">skh</div>
+        <div className="sm:w-auto w-full  ">{/* videos */}</div>
       </div>
 
       <InfiniteMovingReviews items={reviews} />

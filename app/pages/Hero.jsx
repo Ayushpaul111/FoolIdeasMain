@@ -47,7 +47,7 @@ const HeroSection = () => {
           <div className="absolute flex flex-col right-4 md:right-8 top-1/2 transform -translate-y-1/2 space-y-4 z-10">
             <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
-                <Link href="#">
+                <Link href="https://wa.me/+917427983047" target="_blank">
                   <Image
                     src="/logos/whatsapp.svg"
                     alt="WhatsApp"
@@ -60,20 +60,26 @@ const HeroSection = () => {
             </div>
             <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
-                <Link href="#">
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61560007932405"
+                  target="_blank"
+                >
                   <Image
-                    src="/logos/telegram.svg"
-                    alt="Telegram"
+                    src="/logos/facebook-green.svg"
+                    alt="Facebook"
                     width={5}
                     height={5}
-                    className="w-5 h-5 sm:w-6 sm:h-6"
+                    className="w-5 h-5 sm:w-6 sm:h-6 rounded-md"
                   />
                 </Link>
               </div>
             </div>
             <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
-                <Link href="#">
+                <Link
+                  href="https://www.linkedin.com/company/foolideas/posts/?feedView=all"
+                  target="_blank"
+                >
                   <Image
                     src="/logos/linkedin.svg"
                     alt="LinkedIn"
@@ -86,7 +92,10 @@ const HeroSection = () => {
             </div>
             <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
               <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
-                <Link href="#">
+                <Link
+                  href="https://www.instagram.com/foolideas/"
+                  target="_blank"
+                >
                   <Image
                     src="/logos/insta.svg"
                     alt="Instagram"
