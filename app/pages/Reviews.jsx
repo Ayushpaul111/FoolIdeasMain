@@ -101,7 +101,7 @@ const Reviews = () => {
 
             <p className="sm:text-sm md:text-lg text-xs pl-2 text-[#B1C8BF]">
               {" "}
-              325 reviews
+              Google reviews
             </p>
           </div>
         </div>
