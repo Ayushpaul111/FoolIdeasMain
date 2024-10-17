@@ -7,7 +7,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   return (
-    <nav className="p-px gradient-bottom-border fixed top-0 left-0 w-full z-50">
+    <nav className="gradient-bottom-border fixed top-0 left-0 w-full z-50">
       <div className="custom-nav-gradient text-white py-4 md:px-8 px-2 flex flex-wrap gap-y-3 items-center justify-between">
         {/* Left Side - Logo and Tagline */}
         <div className="flex items-center">
@@ -26,7 +26,7 @@ const Navbar = () => {
         <div
           className={`relative md:contents ${menu ? "flex" : "hidden"}  w-full`}
         >
-          <div className=" md:flex items-center md:space-x-8 md:border p-3 px-6 md:rounded-full md:border-[#FFFFFF14]">
+          <div className=" md:flex items-center md:space-x-8 md:border p-3 pl-6 md:rounded-full md:border-[#FFFFFF14]">
             <Link href="#" className="hover:text-green-400 text-sm">
               About Us
             </Link>
