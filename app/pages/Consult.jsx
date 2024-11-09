@@ -22,7 +22,7 @@ const Consult = () => {
           {" "}
           <Link
             href="#"
-            className=" text-base sm:text-lg m-auto md:text-xl bg-green-600 px-6 text-sm sm:text-lg py-3 rounded-full text-white hover:bg-green-700"
+            className="bg-green-600 px-6 text-sm sm:text-lg py-3 rounded-full text-[#fff] hover:bg-green-700"
           >
             Free Initial Consultation
           </Link>

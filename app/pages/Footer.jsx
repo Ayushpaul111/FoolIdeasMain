@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-row sm:justify-end gap-3 mb-10 ">
-              <Link href="/">
+              <Link href="https://www.linkedin.com/company/foolideas/posts/?feedView=all">
                 <Image
                   src="/logos/linkedinfooter.svg"
                   width={30}
@@ -58,7 +58,7 @@ const Footer = () => {
                   className="sm:w-[30px] sm:h-[30px] w-[25px] h-[25px]"
                 />
               </Link>
-              <Link href="/">
+              <Link href="https://www.instagram.com/foolideas/">
                 <Image
                   src="/logos/instafooter.svg"
                   width={30}
@@ -67,7 +67,7 @@ const Footer = () => {
                   className="sm:w-[30px] sm:h-[30px] w-[25px] h-[25px]"
                 />
               </Link>
-              <Link href="/">
+              <Link href="https://www.facebook.com/profile.php?id=61560007932405">
                 <Image
                   src="/logos/facebookfooter.svg"
                   width={30}
@@ -76,7 +76,7 @@ const Footer = () => {
                   className="sm:w-[30px] sm:h-[30px] w-[25px] h-[25px]"
                 />
               </Link>
-              <Link href="/">
+              {/* <Link href="/">
                 <Image
                   src="/logos/youtubefooter.svg"
                   width={30}
@@ -84,7 +84,7 @@ const Footer = () => {
                   alt="Insta"
                   className="sm:w-[30px] sm:h-[30px] w-[25px] h-[25px]"
                 />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
