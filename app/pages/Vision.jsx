@@ -10,7 +10,7 @@ const Vision = () => {
         <p className="font-play mt-6 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto text-[#B1C8BF]">
           Guiding Your Success Every Step of the Way
         </p>
-        <p className="mt-8 text-lg sm:text-md md:text-2xl">
+        <p className="mt-8 text-lg sm:text-md md:text-2xl bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
           To help businesses, creators, and innovators turn their ideas into
           impactful realities.
         </p>
