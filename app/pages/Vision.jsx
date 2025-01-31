@@ -1,6 +1,13 @@
-import React from "react";
+import React, { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
 
 const Vision = () => {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: "15min" });
+      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    })();
+  }, []);
   return (
     <section>
       <div className="text-center mx-3 mb-36">
@@ -16,12 +23,15 @@ const Vision = () => {
         </p>
         <br />
         <br />
-        <a
-          href=""
-          className=" mt-10 px-4 py-4 text-[#fff] bg-green-600 rounded-full hover:bg-green-700"
+        <button
+          data-cal-namespace="15min"
+          data-cal-link="fool-ideas-4gekzz/15min"
+          data-cal-config='{"layout":"month_view"}'
         >
-          Free Iitial Consultation
-        </a>
+          <div className=" mt-10 px-4 py-4 text-[#fff] bg-green-600 rounded-full hover:bg-green-700">
+            Free Iitial Consultation
+          </div>
+        </button>
       </div>
     </section>
   );

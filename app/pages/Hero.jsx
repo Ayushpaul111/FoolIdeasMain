@@ -1,10 +1,17 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { getCalApi } from "@calcom/embed-react";
 
 const HeroSection = () => {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: "15min" });
+      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    })();
+  }, []);
   return (
     <section>
       <div className="w-full py-36 bg-[url('/bgGrid.svg')] bg-cover bg-center">
@@ -29,21 +36,21 @@ const HeroSection = () => {
                 Quick Contact
               </Link>
 
-              <Link
-                href="https://wa.me/+917427983047"
-                target="_blank"
-                className="border border-green-600  rounded-full text-white hover:bg-green-700  flex items-center"
-              >
+              <div className="border border-green-600  rounded-full text-white hover:bg-green-700  flex items-center">
                 <div className="relative inline-flex group">
                   <div className="absolute transitiona-all duration-1000 opacity-50 -inset-px bg-gradient-to-b from-[#059669] via-[#34D399] to-[#112F24] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-
-                  <div className="relative inline-flex items-center justify-center px-5 py-3 text-lg font-bold text-white transition-all duration-200  font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
-                    Book A Consultation
-                    <span className="ml-2">📅</span>
-
-                  </div>
+                  <button
+                    data-cal-namespace="15min"
+                    data-cal-link="fool-ideas-4gekzz/15min"
+                    data-cal-config='{"layout":"month_view"}'
+                  >
+                    <div className="relative inline-flex items-center justify-center px-5 py-3 text-lg font-bold text-white transition-all duration-200  font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                      Book A Consultation
+                      <span className="ml-2">📅</span>
+                    </div>
+                  </button>
                 </div>
-              </Link>
+              </div>
             </div>
           </div>
 

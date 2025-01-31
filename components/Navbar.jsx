@@ -2,10 +2,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import mainLogo from "../public/logos/logoMain.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { getCalApi } from "@calcom/embed-react";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: "15min" });
+      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    })();
+  }, []);
   return (
     <nav className="gradient-bottom-border fixed top-0 left-0 w-full z-50">
       <div className="custom-nav-gradient text-white py-4 md:px-8 px-2 flex flex-wrap gap-y-3 items-center justify-between">
@@ -66,13 +73,15 @@ const Navbar = () => {
               Reviews
             </Link>
           </div>
-
-          <a
-            href="#"
-            className="md:static absolute top-2 right-0 bg-green-600 text-white px-4 py-2 h-fit rounded-full hover:bg-green-700"
+          <button
+            data-cal-namespace="15min"
+            data-cal-link="fool-ideas-4gekzz/15min"
+            data-cal-config='{"layout":"month_view"}'
           >
-            Quick Contacts
-          </a>
+            <div className="md:static absolute top-2 right-0 bg-green-600 text-white px-4 py-2 h-fit rounded-full hover:bg-green-700">
+              Quick Contacts
+            </div>
+          </button>
         </div>
 
         {/* Right Side - Quick Contact Button */}
