@@ -1,6 +1,7 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { InfiniteMovingTeam } from "../../components/ui/infinite-moving-team";
+import { motion } from "framer-motion";
 
 const Team = () => {
   const items = [
@@ -35,17 +36,74 @@ const Team = () => {
       role: "Content Writer",
     },
   ];
-  return (
-    <div className=" my-32">
-      <h1 className="text-center text-3xl sm:text-4xl md:text-5xl  font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
-        Our Expert Team
-      </h1>
-      <p className="font-play mt-6 text-center text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
-        Guiding Your Success Every Step of the Way
-      </p>
 
-      <InfiniteMovingTeam items={items} className="mt-8" speed="slow" />
-    </div>
+  // Animation variants for the heading elements
+  const headerVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const subtitleVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        delay: 0.2,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  // Create a staggered reveal for the team section
+  const teamContainerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay: 0.4,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  return (
+    <motion.div
+      className="my-32"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      <motion.h1
+        className="text-center text-3xl sm:text-4xl md:text-5xl font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%"
+        variants={headerVariants}
+      >
+        Our Expert Team
+      </motion.h1>
+
+      <motion.p
+        className="font-play mt-6 text-center text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]"
+        variants={subtitleVariants}
+      >
+        Guiding Your Success Every Step of the Way
+      </motion.p>
+
+      <motion.div
+        variants={teamContainerVariants}
+        className="w-full overflow-hidden"
+      >
+        <InfiniteMovingTeam items={items} className="mt-8" speed="slow" />
+      </motion.div>
+    </motion.div>
   );
 };
 

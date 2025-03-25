@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 const TeamLead = () => {
   return (
-    <div className="text-center sm:m-10 m-5 ">
+    <div className="text-center sm:m-10 m-5" id="team">
       <h1 className=" text-3xl sm:text-4xl md:text-5xl  font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
         Our Team Lead
       </h1>

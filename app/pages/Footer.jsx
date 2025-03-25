@@ -9,9 +9,15 @@ const Footer = () => {
           <div>
             <p className="text-white mb-4">Company</p>
             <ul className="text-[#B1C8BF] space-y-4">
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Contact Us</li>
+              <li>
+                <a href="#aboutUs">About Us</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#services">Contact Us</a>
+              </li>
             </ul>
           </div>
           {/* <div>
@@ -31,9 +37,33 @@ const Footer = () => {
           <div>
             <p className="text-white mb-4">Socials</p>
             <ul className="text-[#B1C8BF] space-y-4">
-              <li>Instagram</li>
-              <li>Facebook</li>
-              <li>Linkedin</li>
+              <li>
+                <a
+                  href="https://www.instagram.com/foolideas/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61560007932405"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/foolideas/posts/?feedView=all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Linkedin
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -91,11 +121,11 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-wrap gap-5 sm:m-5 sm:mb-0 mb-0 text-[#B1C8BF]">
-        <p>Terms & Conditions </p> <p>Privacy Policy</p>
+        {/* <p>Terms & Conditions </p> <p>Privacy Policy</p> */}
       </div>
 
       <div className="flex justify-center items-center h-auto text-sm text-[#81a396]">
-        Made with {"<3"} by{" "}
+        Made with {"<3"} by&nbsp;
         <a href="https://ehike.in" target="_blank" rel="noopener noreferrer">
           Ehike
         </a>

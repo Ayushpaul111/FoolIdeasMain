@@ -55,10 +55,10 @@ const Services = () => {
       service: "Google Ads",
       description:
         "Reach your target audience effectively with optimized Google Ads campaigns.",
-    }
+    },
   ];
   return (
-    <section>
+    <section id="services">
       <div className="text-center mx-3 mb-32">
         <h1 className=" text-3xl sm:text-4xl md:text-5xl font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
           Our Services
