@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 const Contact = () => {
   return (
-    <section className="mt-20 mx-5">
+    <section className="mt-20 mx-5" id="contact">
       <div className="max-w-[550px] m-auto text-center">
         <h1 className=" text-3xl sm:text-4xl md:text-5xl font-semibold z-10 bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80%">
           Contact us

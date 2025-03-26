@@ -14,12 +14,12 @@ const Services = () => {
       description:
         "Engage your audience with high-quality, original content tailored to your brand.",
     },
-    {
-      image: "/services/web.svg",
-      service: "Web Development",
-      description:
-        " Get a sleek, responsive website optimized for performance and conversion.",
-    },
+    // {
+    //   image: "/services/web.svg",
+    //   service: "Web Development",
+    //   description:
+    //     " Get a sleek, responsive website optimized for performance and conversion.",
+    // },
     {
       image: "/services/performance.svg",
       service: "Performance Marketing & Paid Media",
