@@ -111,7 +111,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="w-full bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+    <footer className="w-full bg-gradient-to-b from-[#00120b15] to-[#032a1d] text-white">
       {/* Marquee Section */}
       {/* <div className="bg-gray-950 py-6 overflow-hidden">
         <div
