@@ -13,7 +13,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar className="z-50" />
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            zIndex: 99,
+          }}
+        >
+          <Navbar />
+        </div>
+
+        {/* This spacer div creates room for the fixed navbar */}
+        <div style={{ height: "50px" }}></div>
+
         {children}
       </body>
     </html>

@@ -3,54 +3,41 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight, Facebook, Linkedin, Instagram } from "lucide-react";
+import { ArrowUpRight, Facebook, Instagram, Linkedin } from "lucide-react";
 
-// Define social media links as a constant
+// Social media links
 const SOCIAL_MEDIA_LINKS = {
   facebook: "https://www.facebook.com/profile.php?id=61560007932405",
   linkedin: "https://www.linkedin.com/company/foolideas/posts/?feedView=all",
   instagram: "https://www.instagram.com/foolideas/",
 };
 
-// Separate component for marquee text
+// Marquee component with smooth animation
 const MarqueeText = () => (
-  <div className="flex items-center space-x-4 min-w-max animate-marquee bg-[#00120B]">
-    {Array(100)
+  <div className="flex items-center space-x-6 min-w-max animate-marquee">
+    {Array(10)
       .fill(null)
       .map((_, index) => (
-        <div key={index} className="flex items-center space-x-4">
-          {/* <span>call</span>
-          <ArrowUpRight className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" /> */}
-          <span className="ml-4">
-            <div className="w-fit">
-              <Image
-                src="/logos/logoMain.svg"
-                alt="Logo"
-                width={250}
-                height={100}
-              />
-            </div>
-          </span>
-          <ArrowUpRight className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8" />
+        <div key={index} className="flex items-center space-x-6">
+          <Image
+            src="/logos/logoMain.svg"
+            alt="Foolideas Logo"
+            width={200}
+            height={80}
+            className="object-contain"
+          />
+          <ArrowUpRight className="h-5 w-5 text-white" />
         </div>
       ))}
   </div>
 );
 
-// Separate component for social media icons
+// Social media icons component
 const SocialMediaIcons = () => (
-  <div className="flex space-x-3 sm:space-x-4">
+  <div className="flex space-x-4">
     {[
-      {
-        href: SOCIAL_MEDIA_LINKS.facebook,
-        icon: Facebook,
-        label: "Facebook",
-      },
-      {
-        href: SOCIAL_MEDIA_LINKS.linkedin,
-        icon: Linkedin,
-        label: "LinkedIn",
-      },
+      { href: SOCIAL_MEDIA_LINKS.facebook, icon: Facebook, label: "Facebook" },
+      { href: SOCIAL_MEDIA_LINKS.linkedin, icon: Linkedin, label: "LinkedIn" },
       {
         href: SOCIAL_MEDIA_LINKS.instagram,
         icon: Instagram,
@@ -63,33 +50,36 @@ const SocialMediaIcons = () => (
         target="_blank"
         rel="noopener noreferrer"
         aria-label={label}
-        className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full border border-gray-400 hover:bg-gray-100 transition-colors cursor-pointer"
+        className="group relative p-2 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300"
       >
-        <Icon className="sm:w-4 sm:h-4 text-black" strokeWidth={1.5} />
+        <Icon
+          className="h-5 w-5 text-white group-hover:scale-110 transition-transform"
+          strokeWidth={1.5}
+        />
       </Link>
     ))}
   </div>
 );
 
-// Footer navigation section component
+// Navigation section component
 const FooterNavSection = ({ title, links }) => (
-  <div>
-    <h3 className="text-base sm:text-lg mb-4 sm:mb-6 text-black font-bold cursor-pointer">
-      {title}
-    </h3>
-    <ul className="space-y-2 sm:space-y-4 text-sm sm:text-base">
+  <div className="space-y-3">
+    <h3 className="text-lg font-semibold text-white tracking-wide">{title}</h3>
+    <ul className="space-y-2 text-sm">
       {links.map(({ text, href, external }) => (
-        <li key={text} className="flex items-center">
+        <li key={text}>
           <Link
             href={href}
-            className="text-[#333] hover:text-black transition-colors  cursor-pointer"
+            className="text-gray-300 hover:text-white transition-colors flex items-center group"
             {...(external
               ? { target: "_blank", rel: "noopener noreferrer" }
               : {})}
           >
-            {text}
+            <span>{text}</span>
+            {external && (
+              <ArrowUpRight className="h-4 w-4 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+            )}
           </Link>
-          {external && <ArrowUpRight className="h-3 w-3 sm:h-4 sm:w-4 ml-1" />}
         </li>
       ))}
     </ul>
@@ -103,6 +93,7 @@ export default function Footer() {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
 
+    let animationFrame;
     const scrollAnimation = () => {
       if (
         scrollContainer.scrollLeft >=
@@ -110,55 +101,73 @@ export default function Footer() {
       ) {
         scrollContainer.scrollLeft = 0;
       } else {
-        scrollContainer.scrollLeft += 1;
+        scrollContainer.scrollLeft += 0.5; // Smoother scroll speed
       }
+      animationFrame = requestAnimationFrame(scrollAnimation);
     };
 
-    const animationInterval = setInterval(scrollAnimation, 1);
-    return () => clearInterval(animationInterval);
+    animationFrame = requestAnimationFrame(scrollAnimation);
+    return () => cancelAnimationFrame(animationFrame);
   }, []);
 
   return (
-    <footer className="w-full">
-      {/* Top banner with "Book a call" */}
-      <div className="bg-[#00120B] text-white py-8 px-6 overflow-hidden">
+    <footer className="w-full bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+      {/* Marquee Section */}
+      {/* <div className="bg-gray-950 py-6 overflow-hidden">
         <div
           ref={scrollRef}
-          className="flex items-center space-x-4 text-3xl sm:text-4xl md:text-5xl font-medium whitespace-nowrap overflow-x-hidden"
+          className="flex whitespace-nowrap"
           style={{ scrollBehavior: "smooth" }}
         >
           <MarqueeText />
         </div>
-      </div>
+      </div> */}
 
-      {/* Main footer content */}
-      <div className="bg-[#cdf7c8] px-6 sm:px-8 md:px-12 py-8 sm:py-12 md:py-16 rounded-t-[2rem]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 ">
-          {" "}
-          {/* rounded-t-[2rem] added to the div */}
+      {/* Main Footer Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 ">
+          {/* Company Info */}
+          <div className="space-y-4">
+            <Image
+              src="/logos/logoMain.svg"
+              alt="Foolideas Logo"
+              width={150}
+              height={60}
+              className="object-contain"
+            />
+            <p className="text-sm text-gray-400 max-w-xs">
+              Empowering businesses with innovative web solutions and creative
+              design.
+            </p>
+            <SocialMediaIcons />
+          </div>
+
+          {/* Navigation Sections */}
           <FooterNavSection
             title="Services"
             links={[
-              { text: "Webflow development", href: "#" },
-              { text: "Web design (UI/UX)", href: "#" },
-              { text: "Webflow SEO", href: "#" },
-              { text: "Webflow Migrations", href: "#" },
-              { text: "Webflow Integration", href: "#" },
-              { text: "Maintenance and Support", href: "#" },
+              { text: "Social Media Management", href: "#services" },
+              { text: "Content Creation", href: "#services" },
+              { text: "Performance Marketing & Paid Media", href: "#services" },
+              { text: "Search Engine Optimization (SEO)", href: "#services" },
+              { text: "Branding and Design", href: "#services" },
+              { text: "E-Commerce Marketing", href: "#services" },
+              { text: "Influencer Marketing", href: "#services" },
+              { text: "Google Ads", href: "#services" },
             ]}
           />
           <FooterNavSection
             title="Company"
             links={[
-              { text: "About", href: "aboutUs" },
-              { text: "Services", href: "#services" },
-              { text: "Reviews", href: "#reviews" },
-              { text: "The Team", href: "#team" },
-              { text: "Contact", href: "#contact" },
+              { text: "About Us", href: "aboutUs" },
+              { text: "Our Services", href: "#services" },
+              { text: "Client Reviews", href: "#reviews" },
+              { text: "Meet the Team", href: "#team" },
+              { text: "Contact Us", href: "#contact" },
             ]}
           />
           <FooterNavSection
-            title="Socials"
+            title="Connect"
             links={[
               {
                 text: "LinkedIn",
@@ -179,23 +188,20 @@ export default function Footer() {
           />
         </div>
 
-        {/* Footer bottom */}
-        <div className="flex flex-col sm:flex-row justify-between items-center mt-8 sm:mt-12 md:mt-16">
-          <div className="text-xs sm:text-sm text-[#333] mb-2 sm:mb-0">
-            © {new Date().getFullYear()} Foolideas
-          </div>
-          <div className="text-xs sm:text-sm text-[#333] mb-4 sm:mb-0">
-            Made with {"<3"} by{" "}
+        {/* Footer Bottom */}
+        <div className="mt-12 pt-8 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
+          <p>© {new Date().getFullYear()} Foolideas. All rights reserved.</p>
+          <p>
+            Crafted with {"<3"} by{" "}
             <a
               href="https://ehike.in"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline"
+              className="hover:text-white transition-colors"
             >
               Ehike
             </a>
-          </div>
-          <SocialMediaIcons />
+          </p>
         </div>
       </div>
     </footer>

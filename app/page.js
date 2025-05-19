@@ -12,9 +12,10 @@ import Reviews from "./pages/Reviews";
 import Contact from "./pages/Contact";
 import Consult from "./pages/Consult";
 import Footer from "./pages/Footer";
+
 export default function Home() {
   return (
-    <main className="bg-[#00120B]  w-full overflow-hidden">
+    <main className="bg-[#00120B] w-full overflow-x-hidden">
       <HeroSection />
       <ScrollCompanies />
       <About />
