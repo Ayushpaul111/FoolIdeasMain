@@ -15,8 +15,66 @@ const HeroSection = () => {
 
   return (
     <section>
-      <div className="w-full py-36 bg-[url('/bgGrid.svg')] bg-cover bg-center">
-        <div className=" bg-[url('/bgLogo.svg')] w-[85%] mx-auto bg-contain h-full bg-no-repeat bg-center flex items-center justify-center">
+      <style jsx>{`
+        .logo-bg-container {
+          position: relative;
+        }
+
+        .logo-bg-shine {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-image: url("/bgLogo.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          overflow: hidden;
+          pointer-events: none;
+          -webkit-mask: url("/bgLogo.svg") no-repeat center/contain;
+          mask: url("/bgLogo.svg") no-repeat center/contain;
+        }
+
+        .logo-bg-shine::before {
+          content: "";
+          position: absolute;
+          top: -50%;
+          left: -150%;
+          width: 30%;
+          height: 200%;
+          background: linear-gradient(
+            45deg,
+            transparent,
+            rgba(52, 211, 153, 0.3),
+            rgba(16, 185, 129, 0.6),
+            rgba(34, 197, 94, 0.8),
+            rgba(16, 185, 129, 0.6),
+            rgba(52, 211, 153, 0.3),
+            transparent
+          );
+          transform: rotate(45deg);
+          animation: logoShine 5s ease-in-out infinite;
+          filter: blur(11px);
+        }
+
+        @keyframes logoShine {
+          0% {
+            left: -150%;
+          }
+          50% {
+            left: 120%;
+          }
+          100% {
+            left: 120%;
+          }
+        }
+      `}</style>
+
+      <div className="w-full py-36 bg-[url('/bgGrid.svg')] bg-cover bg-center ">
+        <div className="w-[85%] mx-auto h-full flex items-center justify-center logo-bg-container">
+          {/* Background Logo with Shine Effect */}
+          <div className="logo-bg-shine"></div>
           {/* Content */}
           <div className="relative z-10 text-center px-5">
             <motion.h1
@@ -101,7 +159,6 @@ const HeroSection = () => {
               </div>
             </motion.div>
           </div>
-
           {/* Social Icons */}
           <div className="absolute flex flex-col right-4 md:right-8 top-1/2 transform -translate-y-1/2 space-y-4 z-10">
             {[
