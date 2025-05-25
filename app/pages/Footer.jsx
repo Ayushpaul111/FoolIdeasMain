@@ -125,9 +125,9 @@ export default function Footer() {
 
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 ">
-          {/* Company Info */}
-          <div className="space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-36">
+          {/* Company Info - Wider on larger screens */}
+          <div className="space-y-4 lg:col-span-1">
             <Image
               src="/logos/logoMain.svg"
               alt="Foolideas Logo"
@@ -135,61 +135,113 @@ export default function Footer() {
               height={60}
               className="object-contain"
             />
-            <p className="text-sm text-gray-400 max-w-xs">
+            <p className="text-sm text-gray-400 max-w-xs lg:max-w-sm pr-4">
               Empowering businesses with innovative web solutions and creative
               design.
             </p>
             <SocialMediaIcons />
           </div>
 
-          {/* Navigation Sections */}
-          <FooterNavSection
-            title="Services"
-            links={[
-              { text: "Social Media Management", href: "#services" },
-              { text: "Content Creation", href: "#services" },
-              { text: "Performance Marketing & Paid Media", href: "#services" },
-              { text: "Search Engine Optimization (SEO)", href: "#services" },
-              { text: "Branding and Design", href: "#services" },
-              { text: "E-Commerce Marketing", href: "#services" },
-              { text: "Influencer Marketing", href: "#services" },
-              { text: "Google Ads", href: "#services" },
-            ]}
-          />
-          <FooterNavSection
-            title="Company"
-            links={[
-              { text: "About Us", href: "aboutUs" },
-              { text: "Our Services", href: "#services" },
-              { text: "Client Reviews", href: "#reviews" },
-              { text: "Meet the Team", href: "#team" },
-              { text: "Contact Us", href: "#contact" },
-            ]}
-          />
-          <FooterNavSection
-            title="Connect"
-            links={[
-              {
-                text: "LinkedIn",
-                href: SOCIAL_MEDIA_LINKS.linkedin,
-                external: true,
-              },
-              {
-                text: "Facebook",
-                href: SOCIAL_MEDIA_LINKS.facebook,
-                external: true,
-              },
-              {
-                text: "Instagram",
-                href: SOCIAL_MEDIA_LINKS.instagram,
-                external: true,
-              },
-            ]}
-          />
+          {/* Services - Give more space for long service names */}
+          <div className="space-y-3 lg:col-span-1 lg:pl-4">
+            <h3 className="text-lg font-semibold text-white tracking-wide">
+              Services
+            </h3>
+            <ul className="space-y-2 text-sm">
+              {[
+                { text: "Social Media Management", href: "#services" },
+                { text: "Content Creation", href: "#services" },
+                {
+                  text: "Performance Marketing & Paid Media",
+                  href: "#services",
+                },
+                { text: "Search Engine Optimization (SEO)", href: "#services" },
+                { text: "Branding and Design", href: "#services" },
+                { text: "E-Commerce Marketing", href: "#services" },
+                { text: "Influencer Marketing", href: "#services" },
+                { text: "Google Ads", href: "#services" },
+              ].map(({ text, href }) => (
+                <li key={text}>
+                  <Link
+                    href={href}
+                    className="text-gray-300 hover:text-white transition-colors block"
+                  >
+                    {text}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div className="space-y-3 lg:col-span-1">
+            <h3 className="text-lg font-semibold text-white tracking-wide">
+              Company
+            </h3>
+            <ul className="space-y-2 text-sm">
+              {[
+                { text: "About Us", href: "aboutUs" },
+                { text: "Our Services", href: "#services" },
+                { text: "Client Reviews", href: "#reviews" },
+                { text: "Meet the Team", href: "#team" },
+                { text: "Contact Us", href: "#contact" },
+              ].map(({ text, href }) => (
+                <li key={text}>
+                  <Link
+                    href={href}
+                    className="text-gray-300 hover:text-white transition-colors block"
+                  >
+                    {text}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Connect */}
+          <div className="space-y-3 lg:col-span-1">
+            <h3 className="text-lg font-semibold text-white tracking-wide">
+              Connect
+            </h3>
+            <ul className="space-y-2 text-sm">
+              {[
+                {
+                  text: "LinkedIn",
+                  href: SOCIAL_MEDIA_LINKS.linkedin,
+                  external: true,
+                },
+                {
+                  text: "Facebook",
+                  href: SOCIAL_MEDIA_LINKS.facebook,
+                  external: true,
+                },
+                {
+                  text: "Instagram",
+                  href: SOCIAL_MEDIA_LINKS.instagram,
+                  external: true,
+                },
+              ].map(({ text, href, external }) => (
+                <li key={text}>
+                  <Link
+                    href={href}
+                    className="text-gray-300 hover:text-white transition-colors flex items-center group"
+                    {...(external
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
+                  >
+                    <span>{text}</span>
+                    {external && (
+                      <ArrowUpRight className="h-4 w-4 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    )}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-12 pt-8 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
+        <div className="mt-12 pt-8 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400 gap-4">
           <p>© {new Date().getFullYear()} Foolideas. All rights reserved.</p>
           <p>
             Crafted with {"<3"} by{" "}
