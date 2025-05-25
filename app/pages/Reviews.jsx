@@ -9,11 +9,8 @@ const Reviews = () => {
     "/reviews/SoumenChowdhury.jpg",
     "/reviews/DrPrathaPratim.jpg",
     "/reviews/mtbLogo.png",
-    // "/team_images/biru.png",
-    // "/team_images/biru.png",
-    // "/team_images/biru.png",
-    // "/team_images/biru.png",
-    // "/team_images/biru.png",
+    "/reviews/bp.jpg",
+    "/reviews/look24.jpg",
   ];
   const reviews = [
     {
@@ -43,14 +40,24 @@ const Reviews = () => {
       image: "/reviews/mtbLogo.png",
       stars: 5,
     },
-    // {
-    //   name: "Ayush Paul",
-    //   review: "Amzing Work done by Bireswar Das",
-    //   platform: "linkedin",
-    //   location: "Cooch Behar",
-    //   image: "/team_images/biru.png",
-    //   stars: 5,
-    // },
+    {
+      name: "Bappa Paul",
+      review:
+        "I have been a customer of your company for last 2 years.You have better understanding about advertisements on Clients' choice. Wish you success and prosperity.",
+      platform: "The Park Apparel",
+      location: "India",
+      image: "/reviews/bp.jpg",
+      stars: 5,
+    },
+    {
+      name: "LOOK24 Family Salon",
+      review:
+        "Foolideas has greatly boosted our client base. Their creative marketing strategies and professional approach have improved our visibility and bookings. We highly recommend them for any business!",
+      platform: "LOOK24",
+      location: "India",
+      image: "/reviews/look24.jpg",
+      stars: 5,
+    },
   ];
 
   const starsRef = useRef(null);
@@ -69,8 +76,8 @@ const Reviews = () => {
             { transform: "translateY(0px)" },
           ],
           {
-            duration: 2000,
-            delay: delay * 1000,
+            duration: 1000,
+            delay: delay * 500,
             iterations: Infinity,
             easing: "ease-in-out",
           }
