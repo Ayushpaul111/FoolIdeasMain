@@ -13,9 +13,9 @@ const TeamLead = () => {
       </p>
 
       {/* Leader Card */}
-      <div className="mt-8 border-[1px] flex flex-col xl:flex-row border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-90% card-shine overflow-hidden">
-        {/* Text Content */}
-        <div className="sm:m-16 m-5 xl:w-[60%] flex-shrink-0 relative z-10">
+      <div className="mt-8 border-[1px] flex flex-col lg:flex-row border-[#007443A3] rounded-lg bg-gradient-to-tr from-0% from-[#79f7b631] to-[#001C10] to-90% card-shine overflow-hidden">
+        {/* Text Content - Order 2 on mobile, Order 1 on desktop */}
+        <div className="order-2 lg:order-1 sm:m-16 m-5 lg:w-[60%] relative z-10">
           <div className="text-start">
             <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80% leading-tight">
               Bireswar das
@@ -36,7 +36,7 @@ const TeamLead = () => {
             </p>
 
             {/* Social Links */}
-            <div className="flex mt-4 sm:mt-5 gap-6 sm:gap-10">
+            <div className="flex justify-center lg:justify-start mt-4 sm:mt-5 gap-6 sm:gap-10">
               <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
                 <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                   <Link href="https://www.linkedin.com/in/bireswar-das-78378a315/">
@@ -48,7 +48,7 @@ const TeamLead = () => {
                   </Link>
                 </div>
               </div>
-              <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
+              {/* <div className="rounded-xl p-px bg-gradient-to-b from-[#38be87] to-[#00130b]">
                 <div className="bg-gradient-to-b from-[#143c2b] to-[#00130b] p-2 sm:p-3 rounded-xl">
                   <Link href="https://www.instagram.com/bireswar07/">
                     <img
@@ -58,20 +58,20 @@ const TeamLead = () => {
                     />
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
 
-        {/* Image Container */}
-        <div className="xl:w-[40%] w-full flex items-end justify-center xl:justify-end relative overflow-hidden">
-          <div className="xl:absolute xl:bottom-0 xl:right-0 relative flex justify-center xl:justify-end w-full">
+        {/* Image Container - Order 1 on mobile, Order 2 on desktop */}
+        <div className="order-2 lg:w-[40%] w-full flex items-end justify-center lg:justify-end relative overflow-hidden">
+          <div className="lg:absolute lg:bottom-0 lg:right-0 relative flex justify-center lg:justify-end w-full min-h-[250px] sm:min-h-[320px] md:min-h-[400px] lg:min-h-0">
             <Image
-              src="/team_images/biruNew.webp"
+              src="/team_images/biruNew.png"
               alt="Bireswar Das"
               width={450}
               height={600}
-              className="w-[200px] sm:w-[280px] md:w-[350px] lg:w-[400px] xl:w-[450px] h-auto object-contain xl:object-cover xl:object-bottom"
+              className="z-20 w-auto h-[250px] sm:h-[320px] md:h-[400px] lg:w-[400px] lg:h-auto object-contain lg:object-cover lg:object-bottom max-w-none"
               priority
             />
           </div>
