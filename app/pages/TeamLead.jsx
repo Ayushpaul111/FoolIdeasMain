@@ -61,11 +61,11 @@ const TeamLead = () => {
         <div className="w-full relative overflow-hidden z-10">
           <div className="w-[100%] lg:absolute relative lg:bottom-[-100px]">
             <Image
-              src="/team_images/Bireswar.png"
+              src="/team_images/biruNew.webp"
               alt="Bireswar Das"
-              width={400}
-              height={200}
-              className="m-auto sm:w-[400px] w-[250px] "
+              width={450}
+              height={250}
+              className="m-auto sm:w-[500px] w-[300px] "
             />
           </div>
         </div>
