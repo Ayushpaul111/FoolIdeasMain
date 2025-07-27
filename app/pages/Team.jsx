@@ -26,8 +26,8 @@ const Team = () => {
       role: "Photographer",
     },
     {
-      name: "Mrinmoy Sarkar",
-      image: "/team_images/MrinmoySarkar.jpg",
+      name: "Abir Deb",
+      image: "/team_images/AbirDeb.webp",
       role: "Video Editor",
     },
     {
