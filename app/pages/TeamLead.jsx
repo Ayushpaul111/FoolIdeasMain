@@ -18,21 +18,20 @@ const TeamLead = () => {
         <div className="order-2 lg:order-1 sm:m-16 m-5 lg:w-[60%] relative z-10">
           <div className="text-start">
             <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-br from-[#FFFFFF] from-40% to-[#4C685D] to-80% leading-tight">
-              Bireswar das
+              Bireswar Das
             </p>
             <p className="mt-3 sm:mt-5 text-base sm:text-lg md:text-xl lg:text-2xl text-[#B1C8BF]">
               Founder & CEO
             </p>
+
             <p className="text-[#B1C8BF] text-sm sm:text-base md:text-lg lg:text-xl mt-4 sm:mt-5 leading-relaxed">
-              Bireswar is a seasoned marketing specialist with over 7 years of
-              experience in driving digital marketing strategies for top brands.
-              He excels in crafting compelling campaigns that resonate with
-              target audiences and boost brand visibility. With a deep
-              understanding of market trends and a creative approach to
-              problem-solving, Bireswar leads our marketing team with a passion
-              for innovation and results. His expertise spans content marketing,
-              social media strategy, and data-driven decision-making, ensuring
-              our clients achieve measurable growth and success.
+              "You have a story. We bring it forward: loud, sharp, and
+              unforgettable.
+            </p>
+            <p className="text-[#B1C8BF] text-sm sm:text-base md:text-lg lg:text-lg mt-1 sm:mt-2 leading-relaxed">
+              In a world full of noise, we build brands that stand out where it
+              matters. With strategy that makes sense and creativity that moves
+              fast, we help your business grow with presence that sticks."
             </p>
 
             {/* Social Links */}
