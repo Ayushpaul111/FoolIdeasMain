@@ -25,13 +25,13 @@ const TeamLead = () => {
             </p>
 
             <p className="text-[#B1C8BF] text-sm sm:text-base md:text-lg lg:text-xl mt-4 sm:mt-5 leading-relaxed">
-              "You have a story. We bring it forward: loud, sharp, and
+              &quot;You have a story. We bring it forward: loud, sharp, and
               unforgettable.
             </p>
             <p className="text-[#B1C8BF] text-sm sm:text-base md:text-lg lg:text-lg mt-1 sm:mt-2 leading-relaxed">
               In a world full of noise, we build brands that stand out where it
               matters. With strategy that makes sense and creativity that moves
-              fast, we help your business grow with presence that sticks."
+              fast, we help your business grow with presence that sticks.&quot;
             </p>
 
             {/* Social Links */}
