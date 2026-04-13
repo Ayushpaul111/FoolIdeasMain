@@ -3,19 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import mainLogo from "../public/logos/logoMain.svg";
 import { useState, useEffect } from "react";
-import { getCalApi } from "@calcom/embed-react";
+import MeetButton from "./ui/meetButton";
 
 const Navbar = () => {
   const windowSize = 914;
   const [menu, setMenu] = useState(false);
-
-  // Calendar API setup
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: "15min" });
-      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
-    })();
-  }, []);
 
   // Close mobile menu on wider screens
   useEffect(() => {
@@ -125,29 +117,23 @@ const Navbar = () => {
             </a>
 
             {/* Quick Contacts Button Inside Mobile Menu */}
-            <button
+            <MeetButton
               className="block md:hidden bg-green-600 text-white px-4 py-2 md:rounded-full rounded-lg hover:bg-green-700 transition-colors duration-200 mt-2 w-full text-base font-medium"
-              data-cal-namespace="15min"
-              data-cal-link="fool-ideas-4gekzz/15min"
-              data-cal-config='{"layout":"month_view"}'
               onClick={() => setMenu(false)}
             >
               Quick contacts
-            </button>
+            </MeetButton>
           </div>
         </div>
 
         {/* Quick Contacts Button - Right Side on Larger Screens */}
         <div className="hidden md:block md:ml-auto">
-          <button
+          <MeetButton
             className="bg-green-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-green-700 transition-colors duration-200"
-            data-cal-namespace="15min"
-            data-cal-link="fool-ideas-4gekzz/15min"
-            data-cal-config='{"layout":"month_view"}'
             onClick={() => setMenu(false)}
           >
             Quick Contacts
-          </button>
+          </MeetButton>
         </div>
       </div>
 

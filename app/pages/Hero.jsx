@@ -1,18 +1,13 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { getCalApi } from "@calcom/embed-react";
 import { motion } from "framer-motion";
+import MeetButton from "../../components/ui/meetButton";
+
+const MotionMeetButton = motion(MeetButton);
 
 const HeroSection = () => {
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: "15min" });
-      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
-    })();
-  }, []);
-
   return (
     <section>
       <style jsx>{`
@@ -130,12 +125,9 @@ const HeroSection = () => {
                     }}
                     className="absolute transitiona-all duration-1000 opacity-50 -inset-px bg-gradient-to-b from-[#059669] via-[#34D399] to-[#112F24] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"
                   />
-                  <motion.button
+                  <MotionMeetButton
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.2 }}
-                    data-cal-namespace="15min"
-                    data-cal-link="fool-ideas-4gekzz/15min"
-                    data-cal-config='{"layout":"month_view"}'
                   >
                     <div className="relative inline-flex items-center justify-center px-5 py-3 text-lg font-bold text-white transition-all duration-200  font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
                       Book A Consultation
@@ -154,7 +146,7 @@ const HeroSection = () => {
                         📅
                       </motion.span>
                     </div>
-                  </motion.button>
+                  </MotionMeetButton>
                 </div>
               </div>
             </motion.div>

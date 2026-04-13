@@ -1,15 +1,10 @@
-import React, { useEffect } from "react";
-import { getCalApi } from "@calcom/embed-react";
+import React from "react";
 import { motion } from "framer-motion";
+import MeetButton from "../../components/ui/meetButton";
+
+const MotionMeetButton = motion(MeetButton);
 
 const Vision = () => {
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: "15min" });
-      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
-    })();
-  }, []);
-
   // Use inView feature from Framer Motion
   const fadeInUp = {
     initial: { opacity: 0, y: 50 },
@@ -73,12 +68,7 @@ const Vision = () => {
         <br />
         <br />
 
-        <motion.button
-          {...buttonAnimation}
-          data-cal-namespace="15min"
-          data-cal-link="fool-ideas-4gekzz/15min"
-          data-cal-config='{"layout":"month_view"}'
-        >
+        <MotionMeetButton {...buttonAnimation}>
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -86,7 +76,7 @@ const Vision = () => {
           >
             Free Consultation
           </motion.div>
-        </motion.button>
+        </MotionMeetButton>
       </div>
     </section>
   );
