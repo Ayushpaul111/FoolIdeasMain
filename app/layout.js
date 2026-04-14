@@ -2,6 +2,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -64,6 +65,7 @@ export default function RootLayout({ children }) {
         <div style={{ height: "50px" }}></div>
 
         {children}
+        <Analytics />
       </body>
     </html>
   );
