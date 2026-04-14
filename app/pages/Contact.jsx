@@ -57,8 +57,8 @@ const Contact = () => {
           Contact us
         </h1>
         <p className="font-play mt-6 text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-[#B1C8BF]">
-          We're here to help you and we'd love to connect with you. We'll get
-          back you within 24h.
+          We&apos;re here to help you and we&apos;d love to connect with you.
+          We&apos;ll get back you within 24h.
         </p>
       </div>
 
@@ -150,7 +150,7 @@ const Contact = () => {
           )}
           {status === "success" && (
             <p className="mb-3 text-sm text-green-400">
-              Message sent! We'll get back to you within 24h.
+              Message sent! We&apos;ll get back to you within 24h.
             </p>
           )}
           {status === "error" && (
